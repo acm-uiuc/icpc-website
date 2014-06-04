@@ -1,4 +1,5 @@
-icpc-website
-============
+# icpc-website
+Website for ACM@UIUC's SIG ICPC.
 
-Website for ACM-UIUC's ICPC SIG.
+# Development
+<pre><code>jekyll serve --watch --baseurl ""</code></pre>

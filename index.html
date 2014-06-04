@@ -1,0 +1,34 @@
+---
+layout: default
+title: ICPC
+---
+
+<div id="home">
+  <ul class="posts">
+    <li class="about">
+      <br>
+        <h2 class="title">About ACM@UIUC ICPC</h2>
+        <p class="post">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </li>
+    <br>
+    <hr>
+    <br>
+
+    {% for post in site.posts %}
+      <li>
+        <div class="front cover" style="background-image: url({{ site.baseurl }}/assets/images/{{ post.cover }})"></div>
+
+        <a class="title" href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}
+          <span class="meta title">{{ post.date | date_to_string }}</span></a>
+
+        <p class="post">
+            <i>{{ post.description }}</i>
+        </p>
+
+        <hr>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

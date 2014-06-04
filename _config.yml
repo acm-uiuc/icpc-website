@@ -1,0 +1,4 @@
+name: ACM@UIUC ICPC
+markdown: redcarpet
+highlighter: true
+baseurl: /icpc-website

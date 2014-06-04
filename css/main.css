@@ -1,0 +1,250 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+html {
+  /*-webkit-font-smoothing: antialiased;*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-bottom: 4em;
+  background-color: #fff;
+  text-align: center;
+  font: 13.34px Helvetica, Arial, sans-serif;
+  font-size: small;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    background: #aaa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+h1 { margin-bottom: 1em; }
+p { margin: 0 0 1em 0; }
+
+a         { color: #900; }
+a:hover   { color: #c00; }
+a:visited { color: #700; }
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+
+.posts {
+  margin-bottom: 2em;
+  list-style-type: none;
+}
+
+.posts li {
+  line-height: 1.75em;
+}
+
+.posts span {
+  color: #aaa;
+  font-size: 80%;
+  font-family: Monaco, "Courier New", monospace;
+}
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+.cover {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  width: 100%;
+  height: auto;
+  background-position: center center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.front.cover {
+  margin-bottom: 1em;
+  width: 100%;
+  height: 300px;
+}
+
+.site {
+  margin: 3em auto 2em;
+  width: 42em;
+  text-align: justify;
+  font-size: 115%;
+  line-height: 1.5em;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+a.title, h2.title, .meta.title {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18pt;
+  font-family: 'Crimson', Georgia, serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+h1.title, h2.title {
+  margin-bottom: .5em;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 32pt;
+  font-family: 'Crimson', Georgia, serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.title.post {
+  display: inline-block;
+  margin: .5em 0 0 0;
+}
+
+.title a {
+  color: #C72D41;
+}
+
+.title a:hover {
+  color: #FF5D4A;
+}
+
+.header a.extra {
+  margin-left: 1em;
+  color: #aaa;
+}
+
+.header a.extra:hover {
+  color: #000;
+}
+
+.meta {
+  float: right;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #aaa;
+}
+
+.footer {
+  overflow: hidden;
+  margin-top: 2em;
+  border-top: 4px solid #eee;
+  color: #666;
+  font-size: 80%;
+}
+
+.footer .contact {
+  float: left;
+  margin-right: 3em;
+}
+
+.footer .contact a {
+  color: #8085C1;
+}
+
+.footer .rss {
+  float: right;
+  margin-top: 1.1em;
+  margin-right: -.2em;
+}
+
+.footer .rss img {
+  border: 0;
+}
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+.post:not(.meta) {
+  color: #463F40;
+  font-size: 18px;
+  font-family: 'Mercury SSm A', 'Mercury SSm B', Georgia, 'Times New Roman', serif;
+  line-height: 28px;
+}
+
+/* standard */
+.post pre {
+  padding: 0 .4em;
+  border: 1px solid #ddd;
+  background-color: #eef;
+}
+
+.post ul, .post ol {
+  margin-left: 1.35em;
+}
+
+.post code {
+  padding: 0 .2em;
+  border: 1px solid #ddd;
+  background-color: #eef;
+}
+
+.post pre code {
+  border: none;
+}
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #fff;
+}
+
+.post pre.terminal code {
+  background-color: #333;
+}
+
+/*****************************************************************************/
+/*
+/* Navigation Bar
+/*
+/*****************************************************************************/
+
+ul.navbar {
+  display: inline;
+  list-style-type: none;
+}
+
+ul.navbar > li {
+  font-size: 12pt;
+  display: inline;
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+ul.navbar > li > a.active {
+  color: black;
+  text-decoration: underline;
+  opacity: 1;
+}
+
+ul.navbar > li > a {
+  color: #900 !important;
+  text-decoration: none;
+  font-family: 'Mercury SSm A', 'Mercury SSm B', Georgia, 'Times New Roman', serif;
+  line-height: 36px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+ul.navbar > li > a:hover {
+  color: #FF5D4A !important;
+}

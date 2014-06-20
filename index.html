@@ -3,32 +3,49 @@ layout: default
 title: ICPC
 ---
 
-<div id="home">
-  <ul class="posts">
-    <li class="about">
-      <br>
-        <h2 class="title">About ACM@UIUC ICPC</h2>
-        <p class="post">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-    </li>
+<ul class="posts">
+  <li class="about">
     <br>
-    <hr>
+      <h2 class="title">The Competition</h2>
+      <p class="post">
+        ICPC is an annual algorithmic programming competition where
+        teams of three college students compete to solve as many challenging
+        programming problems as they can within 5 hours. ICPC is separated
+        into two stages: <b>regional</b> and <b>world finals</b>. The top 3
+        teams in each region advance to the world finals, which
+        are held in a different country each year.
+      </p>
+  </li>
+  <hr>
+  <li class="about>">
     <br>
+      <h2 class="title">The Group</h2>
+      <p class="post">
+        SIGICPC is for anyone who likes competitive programming, but is
+        particularly targeted towards those who want to do well in
+        the competition. We meet every week to practice solving
+        challenging problems. Being able to solve challenging
+        problems is particularly helpful for technical interviews as well.
+      </p>
+      <p class="post">
+        In the past 10 years, our school has advanced to world finals 8 times.
+      </p>
+  </li>
+  <hr>
+  <br>
 
-    {% for post in site.posts %}
-      <li>
-        <div class="front cover" style="background-image: url({{ site.baseurl }}/assets/images/{{ post.cover }})"></div>
+  {% for post in site.posts %}
+    <li>
+      <div class="front cover" style="background-image: url({{ site.baseurl }}/assets/images/{{ post.cover }})"></div>
 
-        <a class="title" href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}
-          <span class="meta title">{{ post.date | date_to_string }}</span></a>
+      <a class="title" href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}
+        <span class="meta title">{{ post.date | date_to_string }}</span></a>
 
-        <p class="post">
-            <i>{{ post.description }}</i>
-        </p>
+      <p class="post">
+          <i>{{ post.description }}</i>
+      </p>
 
-        <hr>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
+      <hr>
+  </li>
+  {% endfor %}
+</ul>

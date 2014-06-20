@@ -218,6 +218,10 @@ a.title, h2.title, .meta.title {
   margin-left: -74px;
 }
 
+.brand.logo > a {
+  color: #7C75FA;
+}
+
 .navlist {
   display: inline;
   list-style-type: none;
@@ -257,7 +261,6 @@ a.title, h2.title, .meta.title {
 }
 
 /* Front Page */
-
 .warbanner {
   width: auto;
   height: 300px;

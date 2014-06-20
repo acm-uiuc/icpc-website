@@ -36,19 +36,44 @@
           </h1>
         </div>
 
-        <div class="item {% if page.title == 'Resources' %}active{% endif %}">
-          <div class="navlink"><a href="{{ site.baseurl }}/practice.html">Practice</a></div>
+        <div class="item {% if page.title == 'Announcements' %}active{% endif %}">
+          <div class="navlink"
+                style="width:150px;">
+            <a href="{{ site.baseurl }}/announcements.html">
+              Announcements
+            </a>
+          </div>
         </div>
-        <div class="item">
-          <div class="navlink"><a href="#">News</a></div>
+        <div class="item {% if page.title == 'Practice' %}active{% endif %}">
+          <div class="navlink"
+                style="width:100px;">
+            <a href="{{ site.baseurl }}/practice.html">
+              Practice
+            </a>
+          </div>
+        </div>
+        <div class="item {% if page.title == 'Learn' %}active{% endif %}">
+          <div class="navlink"
+                style="width:80px;">
+            <a href="{{ site.baseurl }}/learn.html">
+              Learn
+            </a>
+          </div>
         </div>
         <div class="item {% if page.title == 'Contact' %}active{% endif %}">
-          <div class="navlink"><a href="{{ site.baseurl }}/contact.html">Contact</a></div>
+          <div class="navlink"
+                style="width:100px;">
+            <a href="{{ site.baseurl }}/contact.html">
+              Contact
+            </a>
+          </div>
         </div>
 
         <div class="item">
           <h1 class="brand right">
-            <a href="http://www.acm.uiuc.edu/">ACM@UIUC</a>
+            <a href="http://www.acm.uiuc.edu/">
+              ACM@UIUC
+            </a>
           </h1>
         </div>
       </div>

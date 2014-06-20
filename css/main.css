@@ -202,8 +202,8 @@ a.title, h2.title, .meta.title {
 }
 
 .navlist-bg {
-  margin-right: 20%;
-  margin-left: 20%;
+  margin-right: 15%;
+  margin-left: 15%;
   height: 5em;
   background-color: #7C75FA;
 }
@@ -262,6 +262,7 @@ a.title, h2.title, .meta.title {
   width: auto;
   height: 300px;
   border-bottom: solid 10px #7C75FA;
+  margin-bottom: 2em;
   background-image: url("../assets/images/warimage.gif");
   background-size: cover;
   background-repeat: no-repeat;
@@ -300,7 +301,7 @@ a.contact {
 
 /* Learn Page */
 .resources {
-  margin-top: 2em;
+  margin-top: 3em;
 }
 
 .resource {

@@ -1,8 +1,4 @@
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
+/* Common */
 * {
   margin: 0;
   padding: 0;
@@ -31,12 +27,7 @@ p { margin: 0 0 1em 0; }
 
 a { text-decoration: none; }
 
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-
+/* Home */
 .posts {
   margin-bottom: 2em;
   list-style-type: none;
@@ -52,11 +43,7 @@ a { text-decoration: none; }
   font-family: Monaco, "Courier New", monospace;
 }
 
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
+/* Site */
 .cover {
   margin-top: 1em;
   margin-bottom: 1.5em;
@@ -162,11 +149,7 @@ a.title, h2.title, .meta.title {
   border: 0;
 }
 
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
+/* Posts */
 .post:not(.meta) {
   color: #463F40;
   font-size: 18px;
@@ -195,7 +178,7 @@ a.title, h2.title, .meta.title {
   border: none;
 }
 
-/* terminal */
+/* terminal */ */
 .post pre.terminal {
   border: 1px solid #000;
   background-color: #333;
@@ -206,11 +189,7 @@ a.title, h2.title, .meta.title {
   background-color: #333;
 }
 
-/*****************************************************************************/
-/*
-/* Navigation Bar
-/*
-/*****************************************************************************/
+/* Navigation Bar */
 .navbar {
   border-bottom: solid 10px #7C75FA;
   background-color: #5856D6;
@@ -254,7 +233,6 @@ a.title, h2.title, .meta.title {
 .navlist > .item > .navlink,
 .navlist > .item > .brand {
   display: table-cell;
-  width: 95px;
   vertical-align: middle;
   text-align: center;
 }
@@ -278,11 +256,7 @@ a.title, h2.title, .meta.title {
   margin-right: 1.5em;
 }
 
-/*****************************************************************************/
-/*
-/* Front Page
-/*
-/*****************************************************************************/
+/* Front Page */
 
 .warbanner {
   width: auto;
@@ -293,12 +267,7 @@ a.title, h2.title, .meta.title {
   background-repeat: no-repeat;
 }
 
-/*****************************************************************************/
-/*
-/* Contact Page
-/*
-/*****************************************************************************/
-
+/* Contact Page */
 a.contact {
   color: black;
 }
@@ -309,8 +278,10 @@ a.contact {
 
 .left {
   float: left;
+  margin-top: 0;
   margin-left: 0;
   width: 45%;
+  border-right: dashed 1px #666e7b;
   text-align: center;
 }
 
@@ -325,4 +296,40 @@ a.contact {
 
 .clear {
   clear: both;
+}
+
+/* Learn Page */
+.resources {
+  margin-top: 2em;
+}
+
+.resource {
+  margin-top: 1.5em;
+  margin-right: 1.5em;
+  margin-left: 1.5em;
+  padding-bottom: 1.5em;
+  border-bottom: solid 1px #b8b8b8;
+  font-family: 'Mercury SSm A', 'Mercury SSm B', Georgia, 'Times New Roman', serif;
+}
+
+.resource > a > div.link {
+  display: inline;
+  color: #a6aebb;
+}
+
+.resource > a > div.fa {
+  float: right;
+  color: black;
+}
+
+.resource > a > h2.title {
+  display: inline;
+  margin-left: .5em;
+  color: #1a1a1a;
+}
+
+.resource > a > div {
+  margin-top: .75em;
+  margin-left: .75em;
+  color: #666e7b;
 }

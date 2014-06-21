@@ -1,0 +1,65 @@
+<div class="navbar">
+  <div class="navlist-bg">
+    <!-- This is temporary until we get a decent logo -->
+    <div class="brand logo" style="font-size:48px; color:white; margin-left:-48px; margin-top:.25em; margin-bottom:.25em;">
+      <a href="{{ site.baseurl }}/">λ</a>
+      <!-- <img width="64px" height="64px" src="./assets/images/64x64_balloon.png"></img> -->
+    </div>
+  <div class="navlist">
+    <div class="item">
+      <h1 class="brand {% if page.title == 'ICPC'%}active{% endif %}">
+        <a href="{{ site.baseurl }}/">ICPC</a>
+      </h1>
+    </div>
+
+    <div class="item {% if page.title == 'Announcements' or page.category == 'announcements' %}active{% endif %}">
+      <div class="navlink"
+            style="width:150px;">
+        <a href="{{ site.baseurl }}/announcements.html">
+          Announcements
+        </a>
+      </div>
+    </div>
+    <div class="item {% if page.title == 'Calendar' %}active{% endif %}">
+      <div class="navlink"
+            style="width:100px;">
+        <a href="{{ site.baseurl }}/calendar.html">
+          Calendar
+        </a>
+      </div>
+    </div>
+    <div class="item {% if page.title == 'Practices' or page.category == 'practices' %}active{% endif %}">
+      <div class="navlink"
+            style="width:100px;">
+        <a href="{{ site.baseurl }}/practices.html">
+          Practices
+        </a>
+      </div>
+    </div>
+    <div class="item {% if page.title == 'Learn' %}active{% endif %}">
+      <div class="navlink"
+            style="width:80px;">
+        <a href="{{ site.baseurl }}/learn.html">
+          Learn
+        </a>
+      </div>
+    </div>
+    <div class="item {% if page.title == 'Contact' %}active{% endif %}">
+      <div class="navlink"
+            style="width:100px;">
+        <a href="{{ site.baseurl }}/contact.html">
+          Contact
+        </a>
+      </div>
+    </div>
+
+    <div class="item">
+      <h1 class="brand right">
+        <a href="http://www.acm.uiuc.edu/">
+          ACM@UIUC
+        </a>
+      </h1>
+    </div>
+  </div>
+  </div>
+</div>

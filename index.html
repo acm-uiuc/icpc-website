@@ -3,11 +3,11 @@ layout: default
 title: ICPC
 ---
 
-<ul class="posts">
-  <li class="about">
+<ul class="about">
+  <li>
     <br>
       <h2 class="title">The Competition</h2>
-      <p class="post">
+      <p class="info">
         ICPC is an annual algorithmic programming competition where
         teams of three college students compete to solve as many challenging
         programming problems as they can within 5 hours. ICPC is separated
@@ -17,35 +17,20 @@ title: ICPC
       </p>
   </li>
   <hr>
-  <li class="about>">
+  <li>
     <br>
       <h2 class="title">The Group</h2>
-      <p class="post">
+      <p class="info">
         SIGICPC is for anyone who likes competitive programming, but is
         particularly targeted towards those who want to do well in
         the competition. We meet every week to practice solving
         challenging problems. Being able to solve challenging
         problems is particularly helpful for technical interviews as well.
       </p>
-      <p class="post">
+      <p class="info">
         In the past 10 years, our school has advanced to world finals 8 times.
       </p>
   </li>
   <hr>
   <br>
-
-  {% for post in site.posts %}
-    <li>
-      <div class="front cover" style="background-image: url({{ site.baseurl }}/assets/images/{{ post.cover }})"></div>
-
-      <a class="title" href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}
-        <span class="meta title">{{ post.date | date_to_string }}</span></a>
-
-      <p class="post">
-          <i>{{ post.description }}</i>
-      </p>
-
-      <hr>
-  </li>
-  {% endfor %}
 </ul>

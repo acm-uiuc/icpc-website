@@ -1,0 +1,23 @@
+---
+layout: posts
+title: Practices
+---
+
+{% for practice in site.categories["practices"] %}
+    <div class="resource">
+      <a href="{{ practice.url }}">
+        <h2 class="title">{{ practice.title }}</h2>
+        <div class="link">
+        {{ practice.time }} • {{ practice.date | date: "%b %-d, %Y" }}
+        </div>
+        <div class="fa fa-code"></div>
+        <div>
+            {% if practice.description %}
+            {{ practice.description }}
+            {% else %}
+            {{ practice.content | strip_html | truncatewords:30 }}
+            {% endif %}
+        </div>
+      </a>
+    </div>
+{% endfor %}

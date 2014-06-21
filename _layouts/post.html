@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="post">
+  <header class="post-header">
+    {% if page.category == "announcements" %}
+    <a href="/announcements.html">
+      <div class="fa fa-comment fa-3x"></div>
+    </a>
+    {% else if page.category == "practices" %}
+    <a href="/practices.html">
+      <div class="fa fa-code fa-3x"></div>
+    </a>
+    {% endif %}
+
+    <h1 class="title">{{ page.title }}</h1>
+    <p class="meta">
+      {{ page.time }} • {{ page.date | date: "%b %-d, %Y" }}
+      {% if page.author %} • {{ page.author }}{% endif %}
+      {% if page.meta %} • {{ page.meta }}{% endif %}
+    </p>
+  </header>
+
+  <article class="post-content">
+  {{ content }}
+  </article>
+</div>

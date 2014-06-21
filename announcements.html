@@ -1,0 +1,19 @@
+---
+layout: posts
+title: Announcements
+---
+
+{% for announcement in site.categories["announcements"] %}
+  <div class="resource">
+  <a href="{{ announcement.url }}">
+    <h2 class="title">{{ announcement.title }}</h2>
+    <div class="link">
+      {{ announcement.time }} • {{ announcement.date | date: "%b %-d, %Y" }}
+    </div>
+    <div class="fa fa-comment"></div>
+    <div>
+      {{ announcement.content | strip_html | truncatewords:30 }}
+    </div>
+  </a>
+  </div>
+{% endfor %}

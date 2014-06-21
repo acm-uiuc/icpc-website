@@ -21,14 +21,15 @@ Please branch and commit responsibly. The master branch should stay empty, and t
 # @todo by descending priority
 Please follow the spec for page and functionality requirements.
 
-1. ~~working Announcements and Practice pages (jekyll posts; contents.html is the template)~~
-1. ~~working posts and posts template for Announcements and Practice~~
+1. ~~working Announcements and Practice pages (jekyll posts; contents.html is the template)~~ done
+1. ~~working posts and posts template for Announcements and Practice~~ done
 1. working Calendar page (preferably with styled Google Calendar)
-1. ~~alert on Front page with most recent announcement+practice~~
-1. ~~test posts~~
+1. ~~alert on Front page with most recent announcement+practice~~ done
+1. ~~test posts~~ done
+1. pagination on Announcement and Practice pages
 1. responsiveness for different **computer** screen sizes (forget mobile for now)
 1. choose fonts and colors
-1. ~~refactor css, layouts~~
+1. ~~refactor css, layouts~~ done
 1. rename pages?
 1. continue expanding site spec
 1. logo

@@ -15,6 +15,15 @@ timeam.
 
 {% highlight ruby linenos %}
 def show
+  # test multiple digit lines
+  # test
+  # test
+  # test
+  # test
+  # test
+  # test
+  # test
+  # test
   @widget = Widget(params[:id])
   respond_to do |format|
     format.html # show.html.erb

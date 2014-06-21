@@ -1,3 +1,65 @@
+.alert {
+  margin-right: 4.5em;
+  margin-left: 4.5em;
+  padding-top: 1em;
+  border-radius: 3px;
+  font-size: 16px;
+  font-family: "Source Code Pro";
+}
+
+.alert > .head {
+  display: inline;
+  margin-left: 1.5em;
+}
+
+.alert > .head > .fa {
+  float: right;
+  margin-right: 1.5em;
+}
+
+.alert > .body {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+.alert > .body > h2 {
+  margin-bottom: .25em;
+}
+
+.announcement {
+  margin-bottom: 1em;
+  border: solid 1px #bce8f1;
+  background-color: #d9edf7;
+  color: #31708f;
+}
+
+.announcement > .head {
+  padding-bottom: .5em;
+  border-bottom: solid 1px #bce8f1;
+}
+
+.announcement > .head > .fa {
+  color: #31708f;
+}
+
+.practice {
+  margin-bottom: 3em;
+  border: solid 1px #d6e9c6;
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.practice > .head {
+  padding-bottom: .5em;
+  border-bottom: solid 1px #d6e9c6;
+}
+
+.practice > .head > .fa {
+  color: #3c763d;
+}
+
 .navlist > .item > .navlink, .navlist > .item > .brand {
   display: table-cell;
   vertical-align: middle;
@@ -48,11 +110,15 @@
   background: #333;
 }
 
-*/
 .post pre.terminal {
   border: 1px solid #000;
   background: #333;
   color: #fff;
+}
+
+pre .lineno {
+  padding-right: 5px;
+  border-right: solid 1px #aaa;
 }
 
 .navbar {
@@ -63,6 +129,7 @@
 .navbar > .navlist-bg > .navlist > .item > .navlink > *,
 .navbar > .navlist-bg > .navlist > .item > h1.brand > a {
   color: #fff;
+  font-weight: normal;
   font-family: "Source Code Pro";
 }
 
@@ -283,7 +350,6 @@ p {
 }
 
 .post code {
-  padding: 0 .2em;
   border: 1px solid #ddd;
   background: #eef;
 }

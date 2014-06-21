@@ -1,394 +1,334 @@
-.navlist > .item > .navlink, .navlist > .item > .brand
-{
+.navlist > .item > .navlink, .navlist > .item > .brand {
   display: table-cell;
-  text-align: center;
   vertical-align: middle;
+  text-align: center;
 }
 
-.navlist > .item
-{
+.navlist > .item {
   display: table;
   float: left;
-  font-size: 12pt;
   height: 4em;
+  font-size: 12pt;
 }
 
-.navlist
-{
+.navlist {
   display: inline;
   list-style-type: none;
 }
 
-.navlist > .item.active > .navlink > a
-{
+.navlist > .item.active > .navlink > a {
   color: #5856d6 !important;
 }
 
-.brand.active a
-{
+.brand.active a {
   color: #5856d6 !important;
 }
 
-.navlist > .item:last-child
-{
+.navlist > .item:last-child {
   float: right;
   margin-right: 1.5em;
 }
 
 .navlist > .item:first-child,
-.navlist > .item:nth-child(2)
-{
+.navlist > .item:nth-child(2) {
   float: left;
   margin-left: 1em;
 }
 
-.brand.logo > a
-{
+.brand.logo > a {
   color: #7c75fa;
 }
 
-.brand.logo
-{
+.brand.logo {
   float: left;
   margin-left: -74px;
 }
 
-.post pre.terminal code
-{
+.post pre.terminal code {
   background: #333;
 }
 
 */
-.post pre.terminal
-{
-  background: #333;
+.post pre.terminal {
   border: 1px solid #000;
+  background: #333;
   color: #fff;
 }
 
-.navbar
-{
-  background: #5856d6;
+.navbar {
   border-bottom: solid 10px #7c75fa;
+  background: #5856d6;
 }
 
 .navbar > .navlist-bg > .navlist > .item > .navlink > *,
-.navbar > .navlist-bg > .navlist > .item > h1.brand > a
-{
+.navbar > .navlist-bg > .navlist > .item > h1.brand > a {
   color: #fff;
   font-family: "Source Code Pro";
 }
 
-.brand
-{
-  font-size: 24pt;
+.brand {
   text-decoration: none;
+  font-size: 24pt;
 }
 
-.navlist-bg
-{
-  background: #7c75fa;
-  height: 5em;
-  margin-left: 15%;
+.navlist-bg {
   margin-right: 15%;
+  margin-left: 15%;
+  height: 5em;
+  background: #7c75fa;
 }
 
-.post-header > .meta
-{
-  color: #aaa;
+.post-header > .meta {
   display: inline;
   float: right;
   margin-right: 1em;
   padding-top: .6em;
+  color: #aaa;
 }
 
-.post-header > a > .fa
-{
+.post-header > a > .fa {
   float: left;
   margin-top: -.25em;
 }
 
-.post-header > h1.title
-{
+.post-header > h1.title {
   display: inline;
   float: right;
+  margin-top: -.25em;
   text-align: right;
 }
 
-article a
-{
+article a {
   color: #5856d6 !important;
   text-decoration: underline;
 }
 
-article pre
-{
+article pre {
   margin-bottom: 1em;
 }
 
-article h2
-{
-  border-bottom: solid 1px #fafafa;
+article h2 {
   margin-bottom: .25em;
-  padding-bottom: .25em;
   padding-top: .25em;
+  padding-bottom: .25em;
+  border-bottom: solid 1px #fafafa;
 }
 
-article h1
-{
+article h1 {
+  margin-top: 1em;
+  margin-bottom: .5em;
+  padding-bottom: .25em;
   border-bottom: solid 1px #f8f8f8;
   font-size: 26px;
-  margin-bottom: .5em;
-  margin-top: 1em;
-  padding-bottom: .25em;
 }
 
-.post-header
-{
-  border-bottom: solid 1px #eee;
+.post-header {
+  margin-right: -1em;
   margin-bottom: 1em;
   margin-left: -1em;
-  margin-right: -1em;
   padding-bottom: 3em;
+  border-bottom: solid 1px #eee;
 }
 
-.post
-{
-  margin-bottom: 4em;
+.post {
   margin-top: 2.5em;
+  margin-bottom: 4em;
 }
 
-.left
-{
-  border-right: dashed 1px #666e7b;
+.left {
   float: left;
-  margin-left: 0;
   margin-top: 0;
-  text-align: center;
+  margin-left: 0;
   width: 45%;
+  border-right: dashed 1px #666e7b;
+  text-align: center;
 }
 
-.both
-{
+.both {
   margin-top: 5em;
 }
 
-a.contact
-{
+a.contact {
   color: #000;
 }
 
-.right
-{
-  margin-left: 45%;
+.right {
   margin-right: auto;
+  margin-left: 45%;
   text-align: center;
 }
 
-.left > h2.title
-{;
+.left > h2.title {;
 }
 
-.clear
-{
+.clear {
   clear: both;
 }
 
-.warbanner
-{
+.warbanner {
+  margin-bottom: 2em;
+  width: auto;
+  height: 300px;
+  border-bottom: solid 10px #7c75fa;
   background-image: url("../assets/images/warimage.gif");
   background-size: cover;
   background-repeat: no-repeat;
-  border-bottom: solid 10px #7c75fa;
-  height: 300px;
-  margin-bottom: 2em;
-  width: auto;
 }
 
-.post pre code
-{
+.post pre code {
   border: none;
 }
 
-.resource > a > div.link
-{
-  color: #a6aebb;
+.resource > a > div.link {
   display: inline;
+  color: #a6aebb;
 }
 
-.resource
-{
+.resource {
+  margin-top: 1.5em;
+  margin-right: 1.5em;
+  margin-left: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 1.5em;
   border-bottom: solid 1px #b8b8b8;
   font-family: "Mercury SSm A", "Mercury SSm B", Georgia, "Times New Roman", serif;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
-  margin-top: 1.5em;
-  padding-bottom: 1.5em;
-  padding-right: 1.5em;
 }
 
-.resources
-{
+.resources {
   margin-top: 3em;
 }
 
-.resource > a > div.fa
-{
+.resource > a > div.fa {
   display: block !important;
-  margin-left: 97%;
   margin-top: -1.25em;
+  margin-left: 97%;
 }
 
-.resource > a > h2.title
-{
-  color: #1a1a1a;
+.resource > a > h2.title {
   display: inline;
   margin-left: .5em;
+  color: #1a1a1a;
 }
 
-.resource > a > div
-{
-  color: #666e7b;
-  margin-left: .8em;
+.resource > a > div {
   margin-top: .75em;
+  margin-left: .8em;
+  color: #666e7b;
 }
 
 .fa.fa-code,
 .fa.fa-comment,
-.fa.fa-external-link
-{
+.fa.fa-external-link {
   color: #7c75fa;
 }
 
-hr
-{
-  background: #aaa;
-  border: 0;
+hr {
   height: 1px;
+  border: 0;
+  background: #aaa;
 }
 
-body
-{
+body {
+  margin-bottom: 4em;
   background: #fff;
+  text-align: center;
   font: small Helvetica, Arial, sans-serif;
   font-size: 13.34px;
-  margin-bottom: 4em;
-  text-align: center;
 }
 
-*
-{
+* {
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6
-{
+h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
 }
 
-h1
-{
+h1 {
   margin-bottom: 1em;
 }
 
-a
-{
+a {
   text-decoration: none;
 }
 
-p
-{
+p {
   margin: 0 0 1em;
 }
 
-.about
-{
-  list-style-type: none;
+.about {
   margin-bottom: 2em;
+  list-style-type: none;
 }
 
-.about li
-{
+.about li {
   line-height: 1.75em;
 }
 
-.post:not(.meta), .info
-{
+.post:not(.meta), .info {
   color: #463f40;
   font-family: "Mercury SSm A", "Mercury SSm B", Georgia, "Times New Roman", serif;
   line-height: 24px;
 }
 
-.header a.extra:hover
-{
+.header a.extra:hover {
   color: #000;
 }
 
-.post pre
-{
-  background: #eef;
-  border: 1px solid #ddd;
+.post pre {
   padding: 0 .4em;
-}
-
-.post code
-{
-  background: #eef;
   border: 1px solid #ddd;
-  padding: 0 .2em;
+  background: #eef;
 }
 
-.post ul, .post ol
-{
+.post code {
+  padding: 0 .2em;
+  border: 1px solid #ddd;
+  background: #eef;
+}
+
+.post ul, .post ol {
   margin-left: 3em;
 }
 
-.header a.extra
-{
-  color: #aaa;
+.header a.extra {
   margin-left: 1em;
+  color: #aaa;
 }
 
-.title a:hover
-{
+.title a:hover {
   color: #ff5d4a;
 }
 
-a.title, h2.title
-{
-  font: 400 18pt "Crimson", Georgia, serif;
+a.title, h2.title {
   margin-bottom: .75em;
   text-decoration: none;
+  font: 400 18pt "Crimson", Georgia, serif;
 }
 
-.site
-{
+.site {
+  margin-right: 21%;
+  margin-left: 21%;
+  text-align: justify;
   font-size: 115%;
   line-height: 1.5em;
-  margin-left: 21%;
-  margin-right: 21%;
-  text-align: justify;
 }
 
-.about span
-{
+.about span {
   color: #aaa;
   font: 80% Monaco, "Courier New", monospace;
 }
 
-.title
-{
+.title {
   font: 400 32pt "Crimson", Georgia, serif;
 }
 
-.title a
-{
+.title a {
   color: #c72d41;
 }
 
-.title.post
-{
+.title.post {
   display: inline-block;
   margin: .5em 0 0;
 }

@@ -5,7 +5,7 @@ title: Practices
 
 {% for practice in site.categories["practices"] %}
     <div class="resource">
-      <a href="{{ practice.url }}">
+      <a href="{{ site.baseurl }}{{ practice.url }}">
         <h2 class="title">{{ practice.title }}</h2>
         <div class="link">
         {{ practice.time }} • {{ practice.date | date: "%b %-d, %Y" }}

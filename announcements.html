@@ -5,7 +5,7 @@ title: Announcements
 
 {% for announcement in site.categories["announcements"] %}
   <div class="resource">
-  <a href="{{ announcement.url }}">
+  <a href="{{ site.baseurl }}{{ announcement.url }}">
     <h2 class="title">{{ announcement.title }}</h2>
     <div class="link">
       {{ announcement.time }} • {{ announcement.date | date: "%b %-d, %Y" }}

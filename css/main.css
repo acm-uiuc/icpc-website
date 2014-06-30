@@ -19,9 +19,9 @@
 
 .alert > .body {
   margin-top: 1em;
+  margin-right: 1.5em;
   margin-bottom: 1em;
   margin-left: 1.5em;
-  margin-right: 1.5em;
 }
 
 .alert > .body > h2 {
@@ -138,6 +138,12 @@ pre .lineno {
   font-size: 24pt;
 }
 
+.brand.right {
+  float: none;
+  margin-left: 100%;
+  width: auto;
+}
+
 .navlist-bg {
   margin-right: 15%;
   margin-left: 15%;
@@ -204,9 +210,7 @@ article h1 {
 
 .left {
   float: left;
-  margin-top: 0;
-  margin-left: 0;
-  width: 45%;
+  width: 33%;
   border-right: dashed 1px #666e7b;
   text-align: center;
 }
@@ -219,9 +223,16 @@ a.contact {
   color: #000;
 }
 
+.center {
+  display: inline-block;
+  width: 33%;
+  border-right: dashed 1px #666e7b;
+  text-align: center;
+}
+
 .right {
-  margin-right: auto;
-  margin-left: 45%;
+  float: right;
+  width: 33%;
   text-align: center;
 }
 

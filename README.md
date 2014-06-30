@@ -23,15 +23,13 @@ Please follow the spec for page and functionality requirements.
 
 1. ~~working Announcements and Practice pages (jekyll posts; contents.html is the template)~~ done
 1. ~~working posts and posts template for Announcements and Practice~~ done
-1. working Calendar page (preferably with styled Google Calendar)
+1. ~~working Calendar page (preferably with styled Google Calendar)~~ done
 1. ~~alert on Front page with most recent announcement+practice~~ done
 1. ~~test posts~~ done
 1. pagination on Announcement and Practice pages
 1. responsiveness for different **computer** screen sizes (forget mobile for now)
 1. choose fonts and colors
 1. ~~refactor css, layouts~~ done
-1. rename pages?
-1. continue expanding site spec
 1. logo
 1. warbanner image
 1. add instructions for content creators

@@ -18,4 +18,13 @@
 
   <!-- custom css -->
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+
+  <!-- calendar page only -->
+  {% if page.title == "Calendar" %}
+  <link rel="stylesheet" href="css/fullcalendar.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.0.2/fullcalendar.min.js"></script>
+  <script type="text/javascript" src="js/gcal.js"></script>
+  {% endif %}
 </head>

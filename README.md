@@ -1,19 +1,18 @@
 # ACM-ICPC Website
-This is the website repository for the ACM-ICPC Team at University of Illinois at Urbana-Champaign created by [Charles Shao](http://web.engr.illinois.edu/~cshao4/) and [Joseph Milla](http://www.josephmilla.com).
+This is the website repository for the ACM-ICPC Team at University of Illinois at Urbana-Champaign created by [Charles Shao](http://web.engr.illinois.edu/~cshao4) and [Joseph Milla](http://www.josephmilla.com).
 
-To get started, checkout <http://acm-uiuc.github.io/icpc-website/>!
+To get started, checkout <http://acm-uiuc.github.io/icpc-website>!
 
 ## Table of Contents
 - [Quick Start](#quick-start)
 - [Bugs and Feature Requests](#bugs-and-feature-requests)
 - [Documentation](#documentation)
 - [Contributing](#contributing)
-- [Versioning](#versioning)
 - [Creators](#creators)
 - [Copyright and License](#copyright-and-license)
 
 ## Quick Start
-- Clone the repo: `https://github.com/acm-uiuc/icpc-website.git`.
+- Clone the repo: `git clone https://github.com/acm-uiuc/icpc-website.git`.
 
 ## Bugs and Feature Requests
 Have a bug or a feature request? If your problem or idea is not addressed yet, [please open a new issue](https://github.com/acm-uiuc/icpc-website/issues/new).
@@ -23,7 +22,7 @@ The website is built with [Jekyll](http://jekyllrb.com and publicly hosted on Gi
 
 ### Running the Site Locally
 1. If necessary, [install Jekyll](http://jekyllrb.com/docs/installation).
-1. From the root `/icpc-website` directory, run `jekyll build; jekyll serve --watch --port 8000` in the command line.*
+1. From the root `/icpc-website` directory, run `jekyll build; jekyll serve --watch --port 8000` in the command line.
 1. Open <http://localhost:8000> in your browser, and there you have it!
 
 ### Other Resources
@@ -36,7 +35,7 @@ Instructions will be given soon!
 
 Editor preferences are available in the [editor config](#) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
 
-## @todo by descending priority
+### TODO List by Descending Priority
 Please follow the spec for page and functionality requirements.
 
 1. ~~working Announcements and Practice pages (jekyll posts; contents.html is the template)~~ done
@@ -52,3 +51,17 @@ Please follow the spec for page and functionality requirements.
 1. warbanner image
 1. add instructions for content creators
 1. real documentation for future maintainers
+
+## Creators
+**Charles Shao**
+
+- <http://twitter.com/25cf>
+- <http://github.com/25cf>
+
+**Joseph Milla**
+
+- <http://twitter.com/josephmilla>
+- <http://github.com/josephmilla>
+
+## Copyright and License
+Code released under [the MIT license](LICENSE). Docs released under [Creative Commons](docs/LICENSE).

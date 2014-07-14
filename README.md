@@ -18,7 +18,7 @@ To get started, checkout <http://acm-uiuc.github.io/icpc-website>!
 Have a bug or a feature request? If your problem or idea is not addressed yet, [please open a new issue](https://github.com/acm-uiuc/icpc-website/issues/new).
 
 ## Documentation
-The website is built with [Jekyll](http://jekyllrb.com and publicly hosted on Github Pages at <http://acm-uiuc.github.io/icpc-website/>.
+The website is built with [Jekyll](http://jekyllrb.com) and publicly hosted on Github Pages at <http://acm-uiuc.github.io/icpc-website/>.
 
 ### Running the Site Locally
 1. If necessary, [install Jekyll](http://jekyllrb.com/docs/installation).

@@ -23,7 +23,7 @@ The website is built with [Jekyll](http://jekyllrb.com) and publicly hosted on G
 ### Running the Site Locally
 1. If necessary, [install Jekyll](http://jekyllrb.com/docs/installation).
 1. From the root `/icpc-website` directory, run `jekyll build; jekyll serve --watch --port 8000` in the command line.
-1. Open <http://localhost:8000> in your browser, and there you have it!
+1. Open <http://localhost:8000/icpc-website> in your browser, and there you have it!
 
 ### Other Resources
 Other resources can be found in [here](https://docs.google.com/presentation/d/1S6Cn7opfmwvdXv_hj0epf-f2VVPMVOSjQPr48xtk6Oc/edit#slide=id.g334dc67db_00).

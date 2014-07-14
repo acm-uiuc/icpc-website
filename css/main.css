@@ -1,4 +1,26 @@
-.alert {
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
+
+* {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Inconsolata', sans-serif;
+}
+
+.navbar-clearBG {
+  background: none;
+}
+
+.ICPC-navbar-brand {
+  font-size: 25px;
+}
+
+.ICPC-navbar-collapse {
+  font-size: 15px;
+}
+
+.index-content-type {
+  margin-bottom: -15px;
+}
+/*.alert {
   margin-right: 4.5em;
   margin-left: 4.5em;
   padding-top: 1em;
@@ -408,4 +430,4 @@ a.title, h2.title {
 .title.post {
   display: inline-block;
   margin: .5em 0 0;
-}
+}*/

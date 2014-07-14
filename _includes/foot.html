@@ -1,4 +1,20 @@
 <!-- This file should be used mainly for global JS libraries. -->
 
-<!-- Boostrap -->
+
+
+<!-- jQuery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<!-- Boostrap JS -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<!-- Holder JS -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.3.1/holder.min.js"></script>
+
+{% if page.title == "Calendar" %}
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.0.2/fullcalendar.min.js"></script>
+<script type="text/javascript" src="js/gcal.js"></script>
+{% endif %}
+
+<!-- TODO: Add Google Analytics here -->

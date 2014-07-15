@@ -2,7 +2,6 @@
 layout: post
 category: announcements
 time: 1:38 AM
-title: Very important title here?
 ---
 
 # Fetibus sociantem nulli

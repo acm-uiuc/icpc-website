@@ -11,14 +11,21 @@
 
 .ICPC-navbar-brand {
   font-size: 25px;
+  font-weight: 700;
+  margin-top: -5px;
 }
 
 .ICPC-navbar-collapse {
   font-size: 15px;
 }
 
-.index-content-type {
+.ICPC-post-type {
   margin-bottom: -15px;
+}
+
+.paddingLR {
+  padding-left: 25px;
+  padding-right: 25px;
 }
 /*.alert {
   margin-right: 4.5em;

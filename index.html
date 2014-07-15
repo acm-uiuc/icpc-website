@@ -3,47 +3,111 @@ layout: default
 title: ICPC
 ---
 
-{% for announcement in site.categories["announcements"] limit:1 %}
-<a href="{{ site.baseurl }}{{ announcement.url }}">
-<div class="alert announcement">
-  <div class="head">
-    Hey! Our latest announcement was on <b>{{ announcement.date | date: "%b %-d, %Y" }}</b>.
-    <div class="fa fa-comment fa-lg"></div>
-  </div>
-  <div class="body">
-    <h2>{{ announcement.title }}</h2>
-    <div>
-      {% if announcement.description %}
-        {{ announcement.description }}
-      {% else %}
-        {{ announcement.content | strip_html | truncatewords:30 }}
-      {% endif %}
-    </div>
-  </div>
-</div>
-</a>
-{% endfor %}
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
 
-{% for practice in site.categories["practices"] limit:1 %}
-<a href="{{ site.baseurl }}{{ practice.url }}">
-<div class="alert practice">
-  <div class="head">
-    Review the latest practice from <b>{{ practice.date | date: "%b %-d, %Y" }}</b>.
-    <div class="fa fa-code fa-lg"></div>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="holder.js/1800x500/auto/#777:#555/text:First slide" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="holder.js/1800x500/auto/#777:#555/text:Second slide" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="holder.js/1800x500/auto/#777:#555/text:Third slide" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
   </div>
-  <div class="body">
-    <h2>{{ practice.title }}</h2>
-    <div>
-      {% if practice.description %}
-        {{ practice.description }}
-      {% else %}
-        {{ practice.content | strip_html | truncatewords:30 }}
-      {% endif %}
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <!-- ANNOUNCEMENTS -->
+    <div class="col-md-6">
+      {% for announcement in site.categories["announcements"] limit:2 %}
+        <span class="block ICPC-post-type">Announcement</span>
+        <h2>{{ announcement.title }}</h2>
+        <span class="block">
+          {% if announcement.description %}
+            {{ announcement.description }}
+          {% else %}
+            {{ announcement.content | strip_html | truncatewords:10 }}
+          {% endif %}
+        </span>
+        <span class="block">{{ announcement.date | date: "%b %-d, %Y" }}</span>
+      {% endfor %}
+    </div>
+
+    <!-- PRACTICE -->
+    <div class="col-md-6">
+      {% for practice in site.categories["practices"] limit:2 %}
+        <span class="block ICPC-post-type">Practice</span>
+        <h2>{{ practice.title }}</h2>
+        <span class="block">
+          {% if practice.description %}
+            {{ practice.description }}
+          {% else %}
+            {{ practice.content | strip_html | truncatewords:10 }}
+          {% endif %}
+        </span>
+        <span class="block">{{ practice.date | date: "%b %-d, %Y" }}</span>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <h2>The Competition</h2>
+      <p>
+        ICPC is an annual algorithmic programming competition where
+        teams of three college students compete to solve as many challenging
+        programming problems as they can within 5 hours. ICPC is separated
+        into two stages: <b>regional</b> and <b>world finals</b>. The top 3
+        teams in each region advance to the world finals, which
+        are held in a different country each year.
+      </p>
+    </div>
+
+    <div class="col-lg-6">
+      <h2>The Team</h2>
+      <p>
+        SIGICPC is for anyone who likes competitive programming, but is
+        particularly targeted towards those who want to do well in
+        the competition. We meet every week to practice solving
+        challenging problems. Being able to solve challenging
+        problems is particularly helpful for technical interviews as well.
+      </p>
     </div>
   </div>
 </div>
-</a>
-{% endfor %}
+
+<!--
 
 <div class="resource">
   <a>
@@ -74,5 +138,7 @@ title: ICPC
     </div>
   </a>
 </div>
+
+-->
 
 <!-- TODO: Add a page for the organization officers. -->

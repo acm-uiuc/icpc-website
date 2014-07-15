@@ -9,7 +9,6 @@ To get started, checkout <http://acm-uiuc.github.io/icpc-website>!
 - [Documentation](#documentation)
 - [Contributing](#contributing)
 - [Creators](#creators)
-- [Copyright and License](#copyright-and-license)
 
 ## Quick Start
 - Clone the repo: `git clone https://github.com/acm-uiuc/icpc-website.git`.

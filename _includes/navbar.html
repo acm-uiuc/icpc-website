@@ -1,65 +1,55 @@
-<div class="navbar">
-  <div class="navlist-bg">
-    <!-- This is temporary until we get a decent logo -->
-    <div class="brand logo" style="font-size:48px; color:white; margin-left:-48px; margin-top:.25em; margin-bottom:.25em;">
-      <a href="{{ site.baseurl }}/">λ</a>
-      <!-- <img width="64px" height="64px" src="./assets/images/64x64_balloon.png"></img> -->
-    </div>
-  <div class="navlist">
-    <div class="item">
-      <h1 class="brand {% if page.title == 'ICPC'%}active{% endif %}">
-        <a href="{{ site.baseurl }}/">ICPC</a>
-      </h1>
+<nav class="navbar navbar-default navbar-clearBG" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand ICPC-navbar-brand" href="{{ site.baseurl }}/">
+          acm-icpc
+          <span style="font-size: 50%; vertical-align: super; margin-left: -10px;">
+          uiuc
+          </span>
+      </a>
     </div>
 
-    <div class="item {% if page.title == 'Announcements' or page.category == 'announcements' %}active{% endif %}">
-      <div class="navlink"
-            style="width:150px;"> <!-- TODO: Pullout styling from this file. -->
-        <a href="{{ site.baseurl }}/announcements.html">
-          Announcements
-        </a>
-      </div>
-    </div>
-    <div class="item {% if page.title == 'Calendar' %}active{% endif %}">
-      <div class="navlink"
-            style="width:100px;">
-        <a href="{{ site.baseurl }}/calendar.html">
-          Calendar
-        </a>
-      </div>
-    </div>
-    <div class="item {% if page.title == 'Practices' or page.category == 'practices' %}active{% endif %}">
-      <div class="navlink"
-            style="width:100px;">
-        <a href="{{ site.baseurl }}/practices.html">
-          Practices
-        </a>
-      </div>
-    </div>
-    <div class="item {% if page.title == 'Learn' %}active{% endif %}">
-      <div class="navlink"
-            style="width:80px;">
-        <a href="{{ site.baseurl }}/learn.html">
-          Learn
-        </a>
-      </div>
-    </div>
-    <div class="item {% if page.title == 'Contact' %}active{% endif %}">
-      <div class="navlink"
-            style="width:100px;">
-        <a href="{{ site.baseurl }}/contact.html">
-          Contact
-        </a>
-      </div>
-    </div>
+    <div class="collapse navbar-collapse ICPC-navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="{% if page.title == 'ICPC'%}active{% endif %}">
+          <a href="{{ site.baseurl }}/">home</a>
+        </li>
 
-    <div class="item">
-      <h1 class="brand right">
-        <a href="http://www.acm.uiuc.edu/">
-          ACM@UIUC
-        </a>
-      </h1>
+        <li class="{% if page.title == 'Announcements' or page.category == 'announcements' %}active{% endif %}">
+          <a href="{{ site.baseurl }}/announcements.html">announcements</a>
+        </li>
+
+        <li class="{% if page.title == 'Calendar' %}active{% endif %}">
+          <a href="{{ site.baseurl }}/calendar.html">calendar</a>
+        </li>
+
+        <li class="{% if page.title == 'Practices' or page.category == 'practices' %}active{% endif %}">
+          <a href="{{ site.baseurl }}/practices.html">practices</a>
+        </li>
+
+        <li class="{% if page.title == 'Resources' %}active{% endif %}">
+          <a href="{{ site.baseurl }}/resources.html">resources</a>
+        </li>
+
+        <li class="{% if page.title == 'Contact' %}active{% endif %}">
+          <a href="{{ site.baseurl }}/contact.html">contact</a>
+        </li>
+      </ul>
+
+      <!-- <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+
+        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"><span></button>
+      </form> -->
     </div>
   </div>
-  </div>
-</div>
+</nav>

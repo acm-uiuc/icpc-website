@@ -9,7 +9,6 @@ To get started, checkout <http://acm-uiuc.github.io/icpc-website>!
 - [Documentation](#documentation)
 - [Contributing](#contributing)
 - [Creators](#creators)
-- [Copyright and License](#copyright-and-license)
 
 ## Quick Start
 - Clone the repo: `git clone https://github.com/acm-uiuc/icpc-website.git`.
@@ -23,7 +22,7 @@ The website is built with [Jekyll](http://jekyllrb.com) and publicly hosted on G
 ### Running the Site Locally
 1. If necessary, [install Jekyll](http://jekyllrb.com/docs/installation).
 1. From the root `/icpc-website` directory, run `jekyll build; jekyll serve --watch --port 8000` in the command line.
-1. Open <http://localhost:8000> in your browser, and there you have it!
+1. Open <http://localhost:8000/icpc-website/> in your browser, and there you have it!
 
 ### Other Resources
 Other resources can be found in [here](https://docs.google.com/presentation/d/1S6Cn7opfmwvdXv_hj0epf-f2VVPMVOSjQPr48xtk6Oc/edit#slide=id.g334dc67db_00).
@@ -32,25 +31,6 @@ Please branch and commit responsibly. The master branch should stay empty, and t
 
 ## Contributing
 Instructions will be given soon!
-
-Editor preferences are available in the [editor config](#) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
-
-### TODO List by Descending Priority
-Please follow the spec for page and functionality requirements.
-
-1. ~~working Announcements and Practice pages (jekyll posts; contents.html is the template)~~ done
-1. ~~working posts and posts template for Announcements and Practice~~ done
-1. ~~working Calendar page (preferably with styled Google Calendar)~~ done
-1. ~~alert on Front page with most recent announcement+practice~~ done
-1. ~~test posts~~ done
-1. pagination on Announcement and Practice pages
-1. responsiveness for different **computer** screen sizes (forget mobile for now)
-1. choose fonts and colors
-1. ~~refactor css, layouts~~ done
-1. logo
-1. warbanner image
-1. add instructions for content creators
-1. real documentation for future maintainers
 
 ## Creators
 **Charles Shao**
@@ -61,6 +41,3 @@ Please follow the spec for page and functionality requirements.
 
 - <http://twitter.com/josephmilla>
 - <http://github.com/josephmilla>
-
-## Copyright and License
-Code released under [the MIT license](LICENSE). Docs released under [Creative Commons](docs/LICENSE).

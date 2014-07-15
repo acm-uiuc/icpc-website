@@ -1,0 +1,24 @@
+---
+layout: default
+title: Resources
+---
+
+<div class="row paddingLR">
+  {% for resource in site.data.resources %}
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+       <span class="block">{{ resource.title }}</span>
+       <span class="block"><a href="{{resource.link}}">{{ resource.link }}</a></span>
+       <span class="block">{{ resource.description }}</span>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">---</div>
+    <div class="col-md-2"></div>
+  </div>
+  {% endfor %}
+</div>

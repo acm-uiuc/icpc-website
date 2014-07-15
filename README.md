@@ -55,7 +55,6 @@ Please follow the spec for page and functionality requirements.
 ## Creators
 **Charles Shao**
 
-- <http://twitter.com/25cf>
 - <http://github.com/25cf>
 
 **Joseph Milla**

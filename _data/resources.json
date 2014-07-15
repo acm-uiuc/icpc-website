@@ -1,0 +1,38 @@
+[
+  {
+    "id": "spoj",
+    "title": "SPOJ",
+    "link": "http://www.spoj.com",
+    "description": "An online judge with all kinds of problems."
+  },
+  {
+    "id": "uva",
+    "title": "UVa",
+    "link": "http://www.uva.onlinejudge.org",
+    "description": "All problems from past ACM competitions, including world finals."
+  },
+  {
+    "id": "topcoder",
+    "title": "TopCoder",
+    "link": "http://www.topcoder.com/",
+    "description": "Another online judge. Lots of competitions with real rewards."
+  },
+  {
+    "id": "codeforces",
+    "title": "CodeForces",
+    "link": "http://codeforces.com/",
+    "description": "Weekly 2-hour contests."
+  },
+  {
+    "id": "poj",
+    "title": "POJ",
+    "link": "http://poj.org/",
+    "description": "Peking University's online judge."
+  },
+  {
+    "id": "google-code-jam",
+    "title": "Google Code Jam",
+    "link": "https://code.google.com/codejam/",
+    "description": "Annual contest with time constraints attracting the best coders from around the world."
+  },
+]

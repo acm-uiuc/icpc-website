@@ -15,6 +15,11 @@
   margin-top: -5px;
 }
 
+.ICPC-footer-brand {
+  font-size: 40px;
+  font-weight: 700;
+}
+
 .ICPC-navbar-collapse {
   font-size: 15px;
 }
@@ -23,9 +28,20 @@
   margin-bottom: -15px;
 }
 
+.ICPC-footer {
+  background-color: #444444;
+  color: #FFFFFF;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 .paddingLR {
   padding-left: 25px;
   padding-right: 25px;
+}
+
+.block {
+  display: block;
 }
 /*.alert {
   margin-right: 4.5em;

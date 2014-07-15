@@ -3,22 +3,48 @@ layout: default
 title: Resources
 ---
 
-<div class="row paddingLR">
-  {% for resource in site.data.resources %}
+<div class="container">
   <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-       <span class="block">{{ resource.title }}</span>
-       <span class="block"><a href="{{resource.link}}">{{ resource.link }}</a></span>
-       <span class="block">{{ resource.description }}</span>
+    <div class="container">
+      <h2>Resources</h2>
     </div>
-    <div class="col-md-2"></div>
   </div>
 
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">---</div>
-    <div class="col-md-2"></div>
+  <div class="container">
+    <!-- Problem Sets -->
+    <div class="row">
+      <div class="container">
+        <h3>Problem Sets</h3>
+      </div>
+    </div>
+
+    {% for resource in site.data.resources %}
+    <div class="row">
+      <div class="container">
+        <span class="block">{{ resource.title }}</span>
+        <span class="block"><a href="{{resource.link}}">{{ resource.link }}</a></span>
+        <span class="block">{{ resource.description }}</span>
+        ---
+      </div>
+    </div>
+    {% endfor %}
+
+    <!-- Algorithms -->
+    <div class="row">
+      <div class="container">
+        <h3>Algorithms</h3>
+      </div>
+    </div>
+
+    {% for resource in site.data.resources %}
+    <div class="row">
+      <div class="container">
+        <span class="block">{{ resource.title }}</span>
+        <span class="block"><a href="{{resource.link}}">{{ resource.link }}</a></span>
+        <span class="block">{{ resource.description }}</span>
+        ---
+      </div>
+    </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>

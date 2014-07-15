@@ -10,7 +10,7 @@
 }
 
 .ICPC-navbar-brand {
-  font-size: 25px;
+  font-size: 27px;
   font-weight: 700;
   margin-top: -5px;
 }
@@ -33,6 +33,7 @@
   color: #FFFFFF;
   padding-top: 25px;
   padding-bottom: 25px;
+  margin-top: 25px;
 }
 
 .paddingLR {

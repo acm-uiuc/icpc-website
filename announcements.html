@@ -4,7 +4,7 @@ title: Announcements
 ---
 
 {% for announcement in site.categories["announcements"] %}
-  <div class="resource">
+  <div class="item">
     <a href="{{ site.baseurl }}{{ announcement.url }}">
       <h2 class="title">{{ announcement.title }}</h2>
       <div class="link">
@@ -12,7 +12,11 @@ title: Announcements
       </div>
       <div class="fa fa-comment"></div>
       <div>
-        {{ announcement.content | strip_html | truncatewords:30 }}
+        {% if announcement.description %}
+          {{ announcement.description }}
+        {% else %}
+          {{ announcement.content | strip_html | truncatewords:30 }}
+        {% endif %}
       </div>
     </a>
   </div>

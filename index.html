@@ -7,7 +7,8 @@ title: ICPC
 <a href="{{ site.baseurl }}{{ announcement.url }}">
 <div class="alert announcement">
   <div class="head">
-    Hey! Our latest announcement was on <b>{{ announcement.date | date: "%b %-d, %Y" }}</b>.
+    Hey! Our latest announcement was on
+    <b>{{ announcement.date | date: "%b %-d, %Y" }}</b>.
     <div class="fa fa-comment fa-lg"></div>
   </div>
   <div class="body">
@@ -28,7 +29,8 @@ title: ICPC
 <a href="{{ site.baseurl }}{{ practice.url }}">
 <div class="alert practice">
   <div class="head">
-    Review the latest practice from <b>{{ practice.date | date: "%b %-d, %Y" }}</b>.
+    Review the latest practice from
+    <b>{{ practice.date | date: "%b %-d, %Y" }}</b>.
     <div class="fa fa-code fa-lg"></div>
   </div>
   <div class="body">
@@ -45,28 +47,32 @@ title: ICPC
 </a>
 {% endfor %}
 
-<div class="resource">
-  <h2 class="title">The Competition</h2>
-  <div>
-    ICPC is an annual algorithmic programming competition where
-    teams of three college students compete to solve as many challenging
-    programming problems as they can within 5 hours. ICPC is separated
-    into two stages: <b>regional</b> and <b>world finals</b>. The top 3
-    teams in each region advance to the world finals, which
-    are held in a different country each year.
-  </div>
+<div class="item">
+  <a>
+    <h2 class="title">The Competition</h2>
+    <div>
+      ICPC is an annual algorithmic programming competition where
+      teams of three college students compete to solve as many challenging
+      programming problems as they can within 5 hours. ICPC is separated
+      into two stages: <b>regional</b> and <b>world finals</b>. The top 3
+      teams in each region advance to the world finals, which
+      are held in a different country each year.
+    </div>
+  </a>
 </div>
 
-<div class="resource">
-  <h2 class="title">The Group</h2>
-  <div>
-    SIGICPC is for anyone who likes competitive programming, but is
-    particularly targeted towards those who want to do well in
-    the competition. We meet every week to practice solving
-    challenging problems. Being able to solve challenging
-    problems is particularly helpful for technical interviews as well.
-  </div>
-  <div>
-    In the past 10 years, our school has advanced to world finals 8 times.
-  </div>
+<div class="item">
+  <a>
+    <h2 class="title">The Group</h2>
+    <div>
+      SIGICPC is for anyone who likes competitive programming, but is
+      particularly targeted towards those who want to do well in
+      the competition. We meet every week to practice solving
+      challenging problems. Being able to solve challenging
+      problems is particularly helpful for technical interviews as well.
+    </div>
+    <div>
+      In the past 10 years, our school has advanced to world finals 8 times.
+    </div>
+  </a>
 </div>

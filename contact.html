@@ -5,23 +5,21 @@ title: Contact
 
 <div class="both">
 <a class="contact"
-  href="https://www-s.acm.uiuc.edu/cgi-bin/mailman/listinfo/icpc-l">
+   href="{{ site.data.contact['mailing_list'] }}">
 <div class="left">
   <h2 class="title">Join Mailing List</h2>
   <span class="fa fa-list-alt fa-5x"></span>
 </div>
 </a>
 
-<a class="contact"
-  href="mailto:e@mail.com">
+<a class="contact" href="mailto:{{ site.data.contact.email }}">
 <div class="center">
   <h2 class="title">Email Us</h2>
   <span class="fa fa-envelope fa-5x"></span>
 </div>
 </a>
 
-<a class="contact"
-  href="https://www.facebook.com/groups/IllinoisICPC/">
+<a class="contact" href="{{ site.data.contact.facebook }}">
 <div class="right">
   <h2 class="title">Join Facebook Group</h2>
   <span class="fa fa-facebook fa-5x" style="color:#5856D6;"></span>

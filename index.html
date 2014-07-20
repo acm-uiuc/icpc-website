@@ -3,6 +3,18 @@ layout: default
 title: ICPC
 ---
 
+{% if site.data.message['show'] %}
+<div class="alert message">
+  <div class="head" style="border-bottom: none;">
+    <b>{{ site.data.message['message'] }}</b>
+    <div class="fa fa-bullhorn fa-lg"></div>
+  </div>
+  <div class="body">
+  </div>
+</div>
+{% endif %}
+
+
 {% for announcement in site.categories["announcements"] limit:1 %}
 <a href="{{ site.baseurl }}{{ announcement.url }}">
 <div class="alert announcement">

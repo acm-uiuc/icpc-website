@@ -2,6 +2,7 @@
 layout: post
 category: practices
 time: 1:38 AM
+description: Diving deep into A* with Haskell.
 ---
 
 # Big Section

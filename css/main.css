@@ -267,42 +267,6 @@ article h1 {
   font-size: 26px;
 }
 
-/* Announcements */
-
-.announcement {
-  margin-bottom: 1em;
-  border: solid 1px #bce8f1;
-  background-color: #d9edf7;
-  color: #31708f;
-}
-
-.announcement > .head {
-  padding-bottom: .5em;
-  border-bottom: solid 1px #bce8f1;
-}
-
-.announcement > .head > .fa {
-  color: #31708f;
-}
-
-/* Practices */
-
-.practice {
-  margin-bottom: 3em;
-  border: solid 1px #d6e9c6;
-  background-color: #dff0d8;
-  color: #3c763d;
-}
-
-.practice > .head {
-  padding-bottom: .5em;
-  border-bottom: solid 1px #d6e9c6;
-}
-
-.practice > .head > .fa {
-  color: #3c763d;
-}
-
 /* Syntax Highlighting */
 
 .post pre {
@@ -398,6 +362,53 @@ a.contact {
 .alert > .body > h2 {
   margin-bottom: .25em;
 }
+
+/* Message */
+
+.message {
+  margin-bottom: 1em;
+  border: solid 1px black;
+  background-color: #fff;
+  color: black;
+}
+
+/* Announcements */
+
+.announcement {
+  margin-bottom: 1em;
+  border: solid 1px #bce8f1;
+  background-color: #d9edf7;
+  color: #31708f;
+}
+
+.announcement > .head {
+  padding-bottom: .5em;
+  border-bottom: solid 1px #bce8f1;
+}
+
+.announcement > .head > .fa {
+  color: #31708f;
+}
+
+/* Practices */
+
+.practice {
+  margin-bottom: 3em;
+  border: solid 1px #d6e9c6;
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.practice > .head {
+  padding-bottom: .5em;
+  border-bottom: solid 1px #d6e9c6;
+}
+
+.practice > .head > .fa {
+  color: #3c763d;
+}
+
+/* Hero Image */
 
 .warbanner {
   margin-bottom: 2em;

@@ -2,12 +2,12 @@
 layout: post
 category: practices
 time: 1:38 AM
-description: test describe
+description: A gentle introduction to A*.
 ---
 
-# Fetibus sociantem nulli
+# Big Section
 
-## Lino imagine ingentia notum
+## Slightly Smaller Section
 
 Lorem markdownum at tergum delphines et paternos mea adfert, nostro **recubare
 auxiliaribus mora** inpluit puer conubia! *Pulsat iaculum vult*. Nam similis
@@ -15,15 +15,6 @@ timeam.
 
 {% highlight ruby linenos %}
 def show
-  # test multiple digit lines
-  # test
-  # test
-  # test
-  # test
-  # test
-  # test
-  # test
-  # test
   @widget = Widget(params[:id])
   respond_to do |format|
     format.html # show.html.erb

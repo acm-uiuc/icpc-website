@@ -2,6 +2,7 @@
 layout: post
 category: announcements
 time: 1:38 AM
+description: This is a test description that is independent of this post's content.
 ---
 
 # Fetibus sociantem nulli

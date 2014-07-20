@@ -2,7 +2,7 @@
 layout: post
 category: announcements
 time: 1:38 AM
-description: test description
+description: Testing 1, 2, 3...
 ---
 
 # Fetibus sociantem nulli

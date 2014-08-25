@@ -3,21 +3,31 @@ layout: default
 title: Announcements
 ---
 
-{% for announcement in site.categories["announcements"] %}
-  <div class="item">
-    <a href="{{ site.baseurl }}{{ announcement.url }}">
-      <h2 class="title">{{ announcement.title }}</h2>
-      <div class="link">
-        {{ announcement.time }} • {{ announcement.date | date: "%b %-d, %Y" }}
-      </div>
-      <div class="fa fa-comment"></div>
-      <div>
-        {% if announcement.description %}
-          {{ announcement.description }}
-        {% else %}
-          {{ announcement.content | strip_html | truncatewords:30 }}
-        {% endif %}
-      </div>
-    </a>
+{% if site.categories["announcements"] | size > 0 %}
+  {% for announcement in site.categories["announcements"] %}
+    <div class="item">
+      <a href="{{ site.baseurl }}{{ announcement.url }}">
+        <h2 class="title">{{ announcement.title }}</h2>
+        <div class="link">
+          {{ announcement.time }} • {{ announcement.date | date: "%b %-d, %Y" }}
+        </div>
+        <div class="fa fa-comment"></div>
+        <div>
+          {% if announcement.description %}
+            {{ announcement.description }}
+          {% else %}
+            {{ announcement.content | strip_html | truncatewords:30 }}
+          {% endif %}
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+{% else %}
+<div class="alert announcement">
+  <div class="head" style="border-bottom: none;">
+    There's nothing here right now...
+    <div class="fa fa-comment fa-lg"></div>
   </div>
-{% endfor %}
+  <div class="body"></div>
+</div>
+{% endif %}

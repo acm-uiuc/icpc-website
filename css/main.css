@@ -38,11 +38,28 @@ hr {
 }
 
 .site {
-  margin-right: 21%;
-  margin-left: 21%;
+  margin-right: 9%;
+  margin-left: 9%;
   text-align: justify;
   font-size: 115%;
   line-height: 1.5em;
+}
+
+@media only screen
+and (min-width: 320px)
+and (max-width: 480px) {
+  .site {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media only screen
+and (min-width: 1224px) {
+  .site {
+    margin-right: 18%;
+    margin-left: 18%;
+  }
 }
 
 .fa.fa-code,

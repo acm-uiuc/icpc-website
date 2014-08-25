@@ -6,58 +6,62 @@ title: ICPC
 {% if site.data.message['show'] %}
 <div class="alert message">
   <div class="head" style="border-bottom: none;">
-    <b>{{ site.data.message['message'] }}</b>
+    {{ site.data.message['message'] }}
     <div class="fa fa-bullhorn fa-lg"></div>
   </div>
-  <div class="body">
-  </div>
+  <div class="body"></div>
 </div>
 {% endif %}
 
-
-{% for announcement in site.categories["announcements"] limit:1 %}
-<a href="{{ site.baseurl }}{{ announcement.url }}">
-<div class="alert announcement">
-  <div class="head">
-    Hey! Our latest announcement was on
-    <b>{{ announcement.date | date: "%b %-d, %Y" }}</b>.
-    <div class="fa fa-comment fa-lg"></div>
-  </div>
-  <div class="body">
-    <h2>{{ announcement.title }}</h2>
-    <div>
-      {% if announcement.description %}
-        {{ announcement.description }}
-      {% else %}
-        {{ announcement.content | strip_html | truncatewords:30 }}
-      {% endif %}
+{% if site.categories["announcements"] | size > 0 %}
+  {% for announcement in site.categories["announcements"] limit:1 %}
+  <a href="{{ site.baseurl }}{{ announcement.url }}">
+  <div class="alert announcement">
+    <div class="head">
+      Hey! Our latest announcement was on
+      <b>{{ announcement.date | date: "%b %-d, %Y" }}</b>.
+      <div class="fa fa-comment fa-lg"></div>
+    </div>
+    <div class="body">
+      <h2>{{ announcement.title }}</h2>
+      <div>
+        {% if announcement.description %}
+          {{ announcement.description }}
+        {% else %}
+          {{ announcement.content | strip_html | truncatewords:30 }}
+        {% endif %}
+      </div>
     </div>
   </div>
-</div>
-</a>
-{% endfor %}
+  </a>
+  {% endfor %}
+{% endif %}
 
-{% for practice in site.categories["practices"] limit:1 %}
-<a href="{{ site.baseurl }}{{ practice.url }}">
-<div class="alert practice">
-  <div class="head">
-    Review the latest practice from
-    <b>{{ practice.date | date: "%b %-d, %Y" }}</b>.
-    <div class="fa fa-code fa-lg"></div>
-  </div>
-  <div class="body">
-    <h2>{{ practice.title }}</h2>
-    <div>
-      {% if practice.description %}
-        {{ practice.description }}
-      {% else %}
-        {{ practice.content | strip_html | truncatewords:30 }}
-      {% endif %}
+{% if site.categories["practices"] | size > 0 %}
+  {% for practice in site.categories["practices"] limit:1 %}
+  <a href="{{ site.baseurl }}{{ practice.url }}">
+  <div class="alert practice">
+    <div class="head">
+      Review the latest practice from
+      <b>{{ practice.date | date: "%b %-d, %Y" }}</b>.
+      <div class="fa fa-code fa-lg"></div>
+    </div>
+    <div class="body">
+      <h2>{{ practice.title }}</h2>
+      <div>
+        {% if practice.description %}
+          {{ practice.description }}
+        {% else %}
+          {{ practice.content | strip_html | truncatewords:30 }}
+        {% endif %}
+      </div>
     </div>
   </div>
-</div>
-</a>
-{% endfor %}
+  </a>
+  {% endfor %}
+{% endif %}
+
+<br />
 
 <div class="item">
   <a>
@@ -84,7 +88,9 @@ title: ICPC
       problems is particularly helpful for technical interviews as well.
     </div>
     <div>
-      In the past 10 years, our school has advanced to world finals 8 times.
+      <strong>
+        In the past 10 years, our school has advanced to world finals 8 times.
+      </strong>
     </div>
   </a>
 </div>

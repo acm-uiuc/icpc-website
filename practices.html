@@ -3,21 +3,31 @@ layout: default
 title: Practices
 ---
 
-{% for practice in site.categories["practices"] %}
-  <div class="item">
-    <a href="{{ site.baseurl }}{{ practice.url }}">
-      <h2 class="title">{{ practice.title }}</h2>
-      <div class="link">
-      {{ practice.time }} • {{ practice.date | date: "%b %-d, %Y" }}
-      </div>
-      <div class="fa fa-code"></div>
-      <div>
-        {% if practice.description %}
-          {{ practice.description }}
-        {% else %}
-          {{ practice.content | strip_html | truncatewords:30 }}
-        {% endif %}
-      </div>
-    </a>
+{% if site.categories["practices"] | size > 0 %}
+  {% for practice in site.categories["practices"] %}
+    <div class="item">
+      <a href="{{ site.baseurl }}{{ practice.url }}">
+        <h2 class="title">{{ practice.title }}</h2>
+        <div class="link">
+        {{ practice.time }} • {{ practice.date | date: "%b %-d, %Y" }}
+        </div>
+        <div class="fa fa-code"></div>
+        <div>
+          {% if practice.description %}
+            {{ practice.description }}
+          {% else %}
+            {{ practice.content | strip_html | truncatewords:30 }}
+          {% endif %}
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+{% else %}
+<div class="alert practice">
+  <div class="head" style="border-bottom: none;">
+    There's nothing here right now...
+    <div class="fa fa-code fa-lg"></div>
   </div>
-{% endfor %}
+  <div class="body"></div>
+</div>
+{% endif %}

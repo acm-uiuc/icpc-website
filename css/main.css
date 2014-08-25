@@ -8,11 +8,11 @@
 }
 
 body {
-  margin-bottom: 4em;
-  background: #fff;
-  text-align: center;
   font: small Helvetica, Arial, sans-serif;
   font-size: 13.34px;
+  margin-bottom: 4em;
+  text-align: center;
+  background: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,7 +28,7 @@ a {
 }
 
 p {
-  margin: 0 0 1em;
+  margin: 0 0 0;
 }
 
 hr {
@@ -38,11 +38,25 @@ hr {
 }
 
 .site {
-  margin-right: 21%;
-  margin-left: 21%;
-  text-align: justify;
   font-size: 115%;
   line-height: 1.5em;
+  margin-right: 9%;
+  margin-left: 9%;
+  text-align: justify;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .site {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  .site {
+    margin-right: 18%;
+    margin-left: 18%;
+  }
 }
 
 .fa.fa-code,
@@ -55,14 +69,15 @@ hr {
   color: #ff5d4a;
 }
 
-a.title, h2.title {
+a.title,
+h2.title {
+  font: 400 18pt 'Crimson', Georgia, serif;
   margin-bottom: .75em;
   text-decoration: none;
-  font: 400 18pt "Crimson", Georgia, serif;
 }
 
 .title {
-  font: 400 32pt "Crimson", Georgia, serif;
+  font: 400 32pt 'Crimson', Georgia, serif;
 }
 
 .title a {
@@ -74,14 +89,14 @@ a.title, h2.title {
  */
 
 .brand {
-  text-decoration: none;
   font-size: 24pt;
+  text-decoration: none;
 }
 
 .brand.right {
   float: none;
-  margin-left: 100%;
   width: auto;
+  margin-left: 100%;
 }
 
 .brand.logo > a {
@@ -104,9 +119,9 @@ a.title, h2.title {
 
 .navbar > .navlist-bg > .navlist > .navitem > .navlink > *,
 .navbar > .navlist-bg > .navlist > .navitem > h1.brand > a {
-  color: #fff;
+  font-family: 'Source Code Pro';
   font-weight: normal;
-  font-family: "Source Code Pro";
+  color: #fff;
 }
 
 .navlist {
@@ -115,24 +130,24 @@ a.title, h2.title {
 }
 
 .navlist-bg {
+  height: 5em;
   margin-right: 15%;
   margin-left: 15%;
-  height: 5em;
   background: #7c75fa;
 }
 
 .navlist > .navitem {
+  font-size: 12pt;
   display: table;
   float: left;
   height: 4em;
-  font-size: 12pt;
 }
 
 .navlist > .navitem > .navlink,
 .navlist > .navitem > .brand {
   display: table-cell;
-  vertical-align: middle;
   text-align: center;
+  vertical-align: middle;
 }
 
 .navlist > .navitem:last-child {
@@ -164,13 +179,13 @@ a.title, h2.title {
 }
 
 .item {
+  font-family: 'Mercury SSm A', 'Mercury SSm B', Georgia, 'Times New Roman', serif;
   margin-top: 1.5em;
   margin-right: 1.5em;
   margin-left: 1.5em;
   padding-right: 1.5em;
   padding-bottom: 1.5em;
   border-bottom: solid 1px #b8b8b8;
-  font-family: "Mercury SSm A", "Mercury SSm B", Georgia, "Times New Roman", serif;
 }
 
 .item > a > div {
@@ -205,13 +220,15 @@ a.title, h2.title {
   border: none;
 }
 
-.post:not(.meta), .info {
-  color: #463f40;
-  font-family: "Mercury SSm A", "Mercury SSm B", Georgia, "Times New Roman", serif;
+.post:not(.meta),
+.info {
+  font-family: 'Mercury SSm A', 'Mercury SSm B', Georgia, 'Times New Roman', serif;
   line-height: 24px;
+  color: #463f40;
 }
 
-.post ul, .post ol {
+.post ul,
+.post ol {
   margin-left: 3em;
 }
 
@@ -244,8 +261,8 @@ a.title, h2.title {
 }
 
 article a {
-  color: #5856d6 !important;
   text-decoration: underline;
+  color: #5856d6 !important;
 }
 
 article pre {
@@ -260,11 +277,11 @@ article h2 {
 }
 
 article h1 {
+  font-size: 26px;
   margin-top: 1em;
   margin-bottom: .5em;
   padding-bottom: .25em;
   border-bottom: solid 1px #f8f8f8;
-  font-size: 26px;
 }
 
 /* Syntax Highlighting */
@@ -285,9 +302,9 @@ article h1 {
 }
 
 .post pre.terminal {
+  color: #fff;
   border: 1px solid #000;
   background: #333;
-  color: #fff;
 }
 
 pre .lineno {
@@ -300,8 +317,8 @@ pre .lineno {
 .left {
   float: left;
   width: 33%;
-  border-right: dashed 1px #666e7b;
   text-align: center;
+  border-right: dashed 1px #666e7b;
 }
 
 .both {
@@ -315,8 +332,8 @@ a.contact {
 .center {
   display: inline-block;
   width: 33%;
-  border-right: dashed 1px #666e7b;
   text-align: center;
+  border-right: dashed 1px #666e7b;
 }
 
 .right {
@@ -334,29 +351,29 @@ a.contact {
  */
 
 .alert {
-  margin-right: 4.5em;
-  margin-left: 4.5em;
-  padding-top: 1em;
-  border-radius: 3px;
+  font-family: 'Source Code Pro';
   font-size: 16px;
-  font-family: "Source Code Pro";
+  padding-top: 1em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  border-radius: 3px;
 }
 
 .alert > .head {
-  display: inline;
-  margin-left: 1.5em;
+  display: inline-block;
+  width: 100%;
 }
 
-.alert > .head > .fa {
-  float: right;
-  margin-right: 1.5em;
+.alert > .head > p {
+  display: inline-block;
+  float: left;
+  width: 92%;
+  margin-right: 2em;
 }
 
 .alert > .body {
   margin-top: 1em;
-  margin-right: 1.5em;
   margin-bottom: 1em;
-  margin-left: 1.5em;
 }
 
 .alert > .body > h2 {
@@ -366,23 +383,21 @@ a.contact {
 /* Message */
 
 .message {
-  margin-bottom: 1em;
+  color: black;
   border: solid 1px black;
   background-color: #fff;
-  color: black;
 }
 
 /* Announcements */
 
 .announcement {
   margin-bottom: 1em;
+  color: #31708f;
   border: solid 1px #bce8f1;
   background-color: #d9edf7;
-  color: #31708f;
 }
 
 .announcement > .head {
-  padding-bottom: .5em;
   border-bottom: solid 1px #bce8f1;
 }
 
@@ -394,13 +409,12 @@ a.contact {
 
 .practice {
   margin-bottom: 3em;
+  color: #3c763d;
   border: solid 1px #d6e9c6;
   background-color: #dff0d8;
-  color: #3c763d;
 }
 
 .practice > .head {
-  padding-bottom: .5em;
   border-bottom: solid 1px #d6e9c6;
 }
 
@@ -411,11 +425,11 @@ a.contact {
 /* Hero Image */
 
 .warbanner {
-  margin-bottom: 2em;
   width: auto;
   height: 300px;
+  margin-bottom: 2em;
   border-bottom: solid 10px #7c75fa;
-  background-image: url("../assets/images/warimage.gif");
-  background-size: cover;
+  background-image: url('../assets/images/Banner2.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
 }

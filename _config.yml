@@ -1,5 +1,5 @@
 name: ACM@UIUC ICPC
 markdown: redcarpet
 highlighter: pygments
-baseurl: /icpc-website
 paginate: 5
+

@@ -2,22 +2,42 @@
   link: "http://www.spoj.com"
   description: "An online judge with all kinds of problems."
 
+- title: "SPOJ Problem Classifier"
+  link: "http://problemclassifier.appspot.com/"
+  description: "Provides an interface to search SPOJ problems by keyword."
+
 - title: "UVa"
   link: "http://www.uva.onlinejudge.org"
-  description: "All problems from past ACM competitions including world finals."
-
-- title: "TopCoder"
-  link: "http://www.topcoder.com/"
-  description: "Another online judge. Lots of competitions with real rewards."
-
-- title: "CodeForces"
-  link: "http://codeforces.com/"
-  description: "Weekly 2-hour contests."
+  description: "Unversity of Valladoid online judge. Contains all problems from past ACM competitions including World Finals and many regionals."
 
 - title: "POJ"
   link: "http://poj.org/"
   description: "Peking University's online judge."
 
+- title: "SGU Online Judge"
+  link: "http://acm.sgu.ru/"
+  description: "Saratov State University's online judge."
+
+- title: "TopCoder"
+  link: "http://www.topcoder.com/tc"
+  description: "Hosts regular algorithmic programming competitions that sometimes have cash rewards. Also a great source for many practice problems."
+
+- title: "Codeforces"
+  link: "http://codeforces.com/"
+  description: "Weekly 2-hour contests. Great resource for ACM-style problems."
+
 - title: "Google Code Jam"
   link: "https://code.google.com/codejam/"
-  description: "Annual contest with time constraints attracting the best coders from around the world."
+  description: "Annual contest attracting the best coders from around the world."
+
+- title: "Competitive Programming"
+  link: "https://sites.google.com/site/stevenhalim/"
+  description: "The best book to learn algorithmic programming. Includes practice problems and solutions."
+
+- title: "TopCoder Algorithm Tutorials"
+  link: "http://www.topcoder.com/tc?d1=tutorials&d2=alg_index&module=Static"
+  description: "Tutorials on various algorithms that appear in TopCoder SRMs."
+
+- title: "Stanford Competitive Programming Contests Course"
+  link: "http://web.stanford.edu/class/cs97si/"
+  description: "Competitive programming course taught at Stanford. Contains lectures on common problem types and links to practice problems."

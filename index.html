@@ -2,6 +2,7 @@
 layout: default
 title: ICPC
 ---
+{% assign now = site.time | date: "%j" %}
 
 {% if site.data.message['show'] %}
 <div class="alert message">
@@ -13,28 +14,36 @@ title: ICPC
 </div>
 {% endif %}
 
+{% assign week = today - 7 %}
 {% if site.categories["announcements"] | size > 0 %}
-  {% for announcement in site.categories["announcements"] limit:1 %}
-  <a href="{{ site.baseurl }}{{ announcement.url }}">
   <div class="alert announcement">
     <div class="head">
-      <p>Hey! Our latest announcement was on
-      <b>{{ announcement.date | date: "%b %-d, %Y" }}</b>.</p>
+      <p>Hey! Here are the past week's announcements, latest first:
       <div class="fa fa-comment fa-lg"></div>
     </div>
     <div class="body">
-      <h2>{{ announcement.title }}</h2>
-      <div>
-        {% if announcement.description %}
-          {{ announcement.description }}
-        {% else %}
-          {{ announcement.content | strip_html | truncatewords:30 }}
-        {% endif %}
-      </div>
+      <ul class="list-group">
+        {% for announcement in site.categories["announcements"] %}
+          {% assign announcement_time = announcement.date | date: "%j" %}
+          {% assign age = now | minus: announcement_time %}
+          {% if age <= 7 %}
+          <li class="list-group-item">
+            <a href="{{ site.baseurl }}{{ announcement.url }}">
+              <h2>{{ announcement.title }} <span class="pull-right">{{ announcement.date | date: "%b %-d, %Y" }}</span></h2>
+              <div>
+                {% if announcement.description %}
+                  {{ announcement.description }}
+                {% else %}
+                  {{ announcement.content | strip_html | truncatewords:30 }}
+                {% endif %}
+              </div>
+            </a>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
     </div>
   </div>
-  </a>
-  {% endfor %}
 {% endif %}
 
 {% if site.categories["practices"] | size > 0 %}
@@ -60,8 +69,6 @@ title: ICPC
   </a>
   {% endfor %}
 {% endif %}
-
-<br />
 
 <div class="item">
   <a>
@@ -89,7 +96,7 @@ title: ICPC
       to practice solving challenging problems.
     </div>
     <div>
-      You do not need to be a computer science student to participate in our 
+      You do not need to be a computer science student to participate in our
       practices or the ICPC competitions -- we welcome everyone who has an
       interest in learning algorithmic programming!
     </div>

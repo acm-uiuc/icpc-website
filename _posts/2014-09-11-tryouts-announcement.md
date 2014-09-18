@@ -5,7 +5,7 @@ time: 7:30 PM
 description: IMPORTANT!!! Information about tryouts!
 ---
 
-Tryouts for the ACM ICPC Regionals competition will be held from on Sunday, 
+Tryouts for the ACM ICPC Regionals competition will be held on Sunday, 
 September 14th from 12-5 PM, and on Saturday, September 20th from 12-5 PM. Both 
 tryouts will be held in room 520 of the Digital Computer Laboratory (DCL), 
 which is an EWS Linux lab. We will be providing lunch for competitors only at 

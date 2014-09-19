@@ -26,7 +26,7 @@ title: UIUC's ICPC Team Homepage
         {% for announcement in site.categories["announcements"] %}
           {% assign announcement_time = announcement.date | date: "%j" %}
           {% assign age = now | minus: announcement_time %}
-          {% if age <= 3 %}
+          {% if age <= 7 %}
           <li class="list-group-item">
             <a href="{{ site.baseurl }}{{ announcement.url }}">
               <h2>{{ announcement.title }} <span class="pull-right">{{ announcement.date | date: "%b %-d, %Y" }}</span></h2>

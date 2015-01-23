@@ -7,7 +7,10 @@ title: Calendar
 <script type="text/javascript">
   $(document).ready(function() {
     $("#calendar").fullCalendar({
-      events: "https://www.google.com/calendar/feeds/am7q8g2bhdjrn6i3mp30i8hejs%40group.calendar.google.com/public/basic"
+      googleCalendarApiKey: "",
+      events: {
+        googleCalendarId: "am7q8g2bhdjrn6i3mp30i8hejs@group.calendar.google.com/public/basic"
+      }
     });
   });
 </script>

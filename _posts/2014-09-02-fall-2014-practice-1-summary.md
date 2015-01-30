@@ -2,7 +2,7 @@
 layout: post
 category: practices
 time: 8:00 PM
-description: Summary of our first weekly practice.
+description: Summary of our first weekly practice of the Fall 2014 semester.
 ---
 
 In today's practice, we covered some problems that do not require any

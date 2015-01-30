@@ -2,7 +2,7 @@
 layout: post
 category: practices
 time: 8:00 PM
-description: Summary of our fourth weekly practice.
+description: Summary of our fourth weekly practice of the Fall 2014 semester.
 ---
 
 In the last practice, we announced the teams for Regionals and went over the problems 

@@ -2,7 +2,7 @@
 layout: post
 category: practices
 time: 8:00 PM
-description: Summary of our eighth weekly practice.
+description: Summary of our eighth weekly practice of the Fall 2014 semester.
 ---
 
 At today's practice, Jingbo gave a guest lecture on basic dynamic programming (DP) 

@@ -2,7 +2,7 @@
 layout: post
 category: practices
 time: 8:00 PM
-description: Summary of our tenth weekly practice.
+description: Summary of our tenth weekly practice of the Fall 2014 semester.
 ---
 
 At today's meeting, we went over the Regionals problems and explained the solutions.

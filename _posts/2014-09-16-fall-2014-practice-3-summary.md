@@ -2,7 +2,7 @@
 layout: post
 category: practices
 time: 8:00 PM
-description: Summary of our third weekly practice.
+description: Summary of our third weekly practice of the Fall 2014 semester.
 ---
 
 In the last practice, we had a free practice session where we discussed the problems

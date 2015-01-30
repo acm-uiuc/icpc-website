@@ -2,7 +2,7 @@
 layout: post
 category: practices
 time: 8:00 PM
-description: Summary of our fifth weekly practice.
+description: Summary of our fifth weekly practice of the Fall 2014 semester.
 ---
 
 Last practice, we covered simulation problems from the past regionals. We went over 

@@ -2,7 +2,7 @@
 layout: post
 category: practices
 time: 8:00 PM
-description: Summary of our ninth weekly practice.
+description: Summary of our ninth weekly practice of the Fall 2014 semester.
 ---
 
 At today's practice, we went over contest strategy again, discussing some topics that 

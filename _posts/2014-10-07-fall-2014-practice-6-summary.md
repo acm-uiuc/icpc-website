@@ -2,7 +2,7 @@
 layout: post
 category: practices
 time: 8:00 PM
-description: Summary of our sixth weekly practice.
+description: Summary of our sixth weekly practice of the Fall 2014 semester.
 ---
 
 Today’s practice was less well-attended, so we spent a lot of time covering 

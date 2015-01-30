@@ -2,7 +2,7 @@
 layout: post
 category: practices
 time: 8:00 PM
-description: Summary of our seventh weekly practice.
+description: Summary of our seventh weekly practice of the Fall 2014 semester.
 ---
 
 At today's practice, we discussed basic geometry concepts and their relation 

@@ -52,7 +52,7 @@ as you will need accounts on these sites for the practices.
 <br/>
 
 Next week, Mike Seo will be covering basic dynamic programming (DP) problems. The 
-problemset is available in the Announcements section of the website, in [this](/announcements/2015/02/03/practice-problems-for-the-week-of-feb-03.html) 
+problemset is available in the Announcements section of the website, in [this](/announcements/2015/02/04/practice-problems-for-the-week-of-feb-03.html) 
 post. Please attempt as many of these problems as you can on your own before coming 
 to practice, as we will not be going over all of the problems there. Instead, at the 
 practice, Mike will give a short overview of DP problems, go over a problem or two, 

@@ -5,7 +5,7 @@ time: 6:30 PM
 description: Here are the practice problems for next week's practice!
 ---
 
-Next week (February 17th), Timothy Smith will be holding a practice on graph search 
+Next week (February 23rd), Timothy Smith will be holding a practice on graph search 
 problems (breadth-first search and depth-first search). He will be referring to the 
 following problemset:
 

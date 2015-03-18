@@ -49,6 +49,15 @@ title: SIG-ICPC Dropbox Open Programming Contest
 </div>
 
 <div class="item">
+    <h2 class="title">Registration</h2>
+    <div>
+      Register <a href="/contest/register.html">here</a>! (requires Google login)
+      <br><br>
+      Check this page for updates as we get closer to the contest. We will also send $
+    </div>
+</div>
+
+<div class="item">
     <h2 class="title">Schedule</h2>
     <div>
       <b>Registration:</b> until 10:30 AM CDT<br>
@@ -73,15 +82,6 @@ title: SIG-ICPC Dropbox Open Programming Contest
         <li>Second place team: $50 each</li>
         <li>Third place team: $25 each</li>
       </ul>
-    </div>
-</div>
-
-<div class="item">
-    <h2 class="title">Registration</h2>
-    <div>
-      Register <a href="/contest/register.html">here</a>!
-      <br><br>
-      Check this page for updates as we get closer to the contest. We will also send e-mail updates to registered students. Registration closes promptly at 10:30 AM CDT on Saturday, April 18th.
     </div>
 </div>
 

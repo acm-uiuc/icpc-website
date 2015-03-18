@@ -53,7 +53,7 @@ title: SIG-ICPC Dropbox Open Programming Contest
     <div>
       Register <a href="/contest/register.html">here</a>! (requires Google login)
       <br><br>
-      Check this page for updates as we get closer to the contest. We will also send $
+      Check this page for updates as we get closer to the contest. We will also send e-mail updates to registered students. Registration closes promptly at 10:30 AM CDT on Saturday, April 18th.
     </div>
 </div>
 

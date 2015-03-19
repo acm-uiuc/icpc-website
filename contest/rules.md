@@ -8,7 +8,7 @@ title: SIG-ICPC Dropbox Open Programming Contest Rules
 
 <a name="Logistics"></a>
 <h2 class="title">Contest Logistics and Registration:</h2>
-The <b>SIG-ICPC Dropbox Open Programming Contest</b>, hereafter referred to as “the Dropbox Open” or “the contest”, will be held on <b>Saturday, April 18th, from 10:30 AM to 6 PM CDT</b>. The contest will take place in <b>Room 2405 of the Thomas M. Siebel Center for Computer Science, located at 201 N. Goodwin Avenue, Urbana, IL 61801</b>. All participants in the contest must register at the contest website, [http://icpc.cs.illinois.edu/contest/register.html](/contest/register.html). <b>Registration closes promptly at 10:30 AM CDT on the morning of Saturday, April 18th.</b>
+The <b>SIG-ICPC Dropbox Open Programming Contest</b>, hereafter referred to as “the Dropbox Open” or “the contest”, will be held on <b>Saturday, April 18th, from 10:30 AM to 6 PM CDT</b>. The contest will take place in <b>Room 2405 of the Thomas M. Siebel Center for Computer Science, located at 201 N. Goodwin Avenue, Urbana, IL 61801</b>. All participants in the contest must register at the contest website, <a class="contest" href="/contest/register.html">http://icpc.cs.illinois.edu/contest/register.html</a>. <b>Registration closes promptly at 10:30 AM CDT on the morning of Saturday, April 18th.</b>
 
 <br>
 
@@ -32,7 +32,7 @@ Participants must compete in <b>teams</b> of their own choosing of <b>three (3) 
 
 <a name="Eligibility"></a>
 <h2 class="title">Eligibility:</h2>
-All participants must be full-time or part-time students at the University of Illinois at Urbana-Champaign during Spring 2015, and must not be graduating prior to December 2015. Participants must plan to be enrolled as either full-time or part-time students in the December 2015 semester. Participants must also meet all 2015 ICPC Regionals eligibility requirements, which are as follows: 1) Participants must not have competed in 2 ICPC World Finals competitions or 5 ICPC Regionals competitions. 2) Participants must have started post-secondary studies in or after 2011, or must have been born in 1992 or later. The full eligibility requirements are indicated in the flowchart available at [http://icpc.cs.illinois.edu/contest/eligibility.pdf](/contest/eligibility.pdf). Any participants seeking exemptions to the eligibility requirements must contact the Dropbox Open contest team at <a href="mailto:thakore1@illinois.edu">thakore1@illinois.edu</a>.
+All participants must be full-time or part-time students at the University of Illinois at Urbana-Champaign during Spring 2015, and must not be graduating prior to December 2015. Participants must plan to be enrolled as either full-time or part-time students in the December 2015 semester. Participants must also meet all 2015 ICPC Regionals eligibility requirements, which are as follows: 1) Participants must not have competed in 2 ICPC World Finals competitions or 5 ICPC Regionals competitions. 2) Participants must have started post-secondary studies in or after 2011, or must have been born in 1992 or later. The full eligibility requirements are indicated in the flowchart available at <a class="contest" href="/contest/eligibility.pdf">http://icpc.cs.illinois.edu/contest/eligibility.pdf</a>. Any participants seeking exemptions to the eligibility requirements must contact the Dropbox Open contest team at <a class="contest" href="mailto:thakore1@illinois.edu">thakore1@illinois.edu</a>.
 
 <br>
 
@@ -80,7 +80,7 @@ All submissions must read input from standard input and write output to standard
 
 <br>
 
-For a summary of the DOMjudge system interface and instructions on submission, reference the DOMjudge team manual, available at [http://icpc.cs.illinois.edu/contest/team-manual.pdf](/contest/team-manual.pdf).
+For a summary of the DOMjudge system interface and instructions on submission, reference the DOMjudge team manual, available at <a class="contest" href="/contest/team-manual.pdf">http://icpc.cs.illinois.edu/contest/team-manual.pdf</a>.
 
 <br>
 

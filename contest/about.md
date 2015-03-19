@@ -51,7 +51,7 @@ title: SIG-ICPC Dropbox Open Programming Contest
 <div class="item">
     <h2 class="title">Registration</h2>
     <div>
-      Register <a href="/contest/register.html">here</a>! (requires Google login)
+      <b>Register <a class="contest" href="/contest/register.html">here</a>!</b> (requires Google login)
       <br><br>
       Check this page for updates as we get closer to the contest. We will also send e-mail updates to registered students. Registration closes promptly at 10:30 AM CDT on Saturday, April 18th.
     </div>
@@ -102,7 +102,7 @@ title: SIG-ICPC Dropbox Open Programming Contest
     <div>
       Anyone eligible for the 2015 ICPC Mid-Central Regionals competition.
       <br>
-      See <a href="/contest/rules.html#Eligibility">the rules page</a> for the full eligibility requirements.
+      See <a class="contest" href="/contest/rules.html#Eligibility">the rules page</a> for the full eligibility requirements.
     </div>
 </div>
 
@@ -120,13 +120,13 @@ title: SIG-ICPC Dropbox Open Programming Contest
 <div class="item">
     <h2 class="title">Full rules:</h2>
     <div>
-      <a href="/contest/rules.html">http://icpc.cs.illinois.edu/contest/rules.html</a>
+      <a class="contest" href="/contest/rules.html">http://icpc.cs.illinois.edu/contest/rules.html</a>
     </div>
 </div>
 
 <div class="item">
   <h2 class="title">Questions?</h2>
   <div>
-    Please feel free to reach out to us at <a href="mailto:thakore1@illinois.edu">thakore1@illinois.edu</a> with any questions you have about the contest!
+    Please feel free to reach out to us at <a class="contest" href="mailto:icpc@cs.illinois.edu">icpc@cs.illinois.edu</a> with any questions you have about the contest!
   </div>
-<div>
+</div>

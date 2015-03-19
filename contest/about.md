@@ -130,3 +130,7 @@ title: SIG-ICPC Dropbox Open Programming Contest
     Please feel free to reach out to us at <a class="contest" href="mailto:icpc@cs.illinois.edu">icpc@cs.illinois.edu</a> with any questions you have about the contest!
   </div>
 </div>
+
+<div style="text-align:right;color:gray;font-size:11pt">
+Dropbox and the Dropbox logo are trademarks of Dropbox, Inc.
+</div>

@@ -137,3 +137,6 @@ All prize-winning teams will be responsible for working with the SIG-ICPC Dropbo
 <h2 class="title">Other:</h2>
 Rules are subject to change at any time. The SIG-ICPC Dropbox Open Programming Contest team reserves the right to change contest rules or disqualify any participant at any time at their discretion.
 
+<br>
+
+Dropbox and the Dropbox logo are trademarks of Dropbox, Inc.

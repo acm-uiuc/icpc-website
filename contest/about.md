@@ -127,7 +127,7 @@ title: SIG-ICPC Dropbox Open Programming Contest
 <div class="item">
   <h2 class="title">Questions?</h2>
   <div>
-    Please feel free to reach out to us at <a class="contest" href="mailto:icpc@cs.illinois.edu">icpc@cs.illinois.edu</a> with any questions you have about the contest!
+    Please feel free to reach out to us at <a class="contest" href="mailto:dropboxopen@acm.illinois.edu">dropboxopen@acm.illinois.edu</a> with any questions you have about the contest!
   </div>
 </div>
 

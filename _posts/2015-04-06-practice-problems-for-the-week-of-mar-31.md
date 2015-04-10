@@ -45,7 +45,7 @@ and many other programming competitions, so do put in the effort.
 <br/>
 
 For your reference, many of the algorithms required to solve these problems are 
-explained in in chapter 4 of the Competitive Programming book by Steven Halim, available 
+explained in chapter 4 of the Competitive Programming book by Steven Halim, available 
 [here][Halim]. 
 TopCoder also has a wide array of advanced graph problem tutorials, including an 
 incredibly vast selection of tutorials on network flow algorithms. They are 

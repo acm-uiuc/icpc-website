@@ -5,7 +5,7 @@ time: 7:00 PM
 description: Results of the SIG-ICPC Dropbox Open Programming Contest!
 ---
 
-Congratulations to the team of Yuting Zhang, Haozhen Ding, and Fan Yewen for winning 
+Congratulations to the team of Yuting Zhang, Haozhen Ding, and Yewen Fan for winning 
 the first ever Dropbox SIG-ICPC Open Programming Contest by solving 11 of the 15 
 problems! Also, congratulations to Team UIUCBlack, consisting of Shivam Gupta, Ryan 
 Jian, and Ruihan Shan, for taking second place by solving 10 problems, and the team 

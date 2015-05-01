@@ -18,7 +18,7 @@ Number Theory
   * [Humble Numbers][3]
   * [Help Mr. Tomisu][4]
 
-Number theory
+Combinatorics
 
   * [Combination][5]
   * [Halloween Treats][6]

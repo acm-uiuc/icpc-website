@@ -39,8 +39,8 @@ and 5.5 of the Competitive Programming book by Steven Halim, available [here][Ha
 Learning about pigeon hole principle and inclusion-exclusion principle will especially 
 be helpful for solving some of the combinatorics problems listed above. Consult the Stanford 
 University's competitive programming course lecture [slides][Stanford] for basic math concepts. 
-However, the slides are not exhasutive (i.e. the math concepts I have listed are not covered in 
-these slides). Wikipedia seems to have pretty good explanations, so please try to study these 
+However, the slides are not exhaustive (i.e. the math concepts listed are not covered in 
+these slides). Wikipedia has decent explanations, so please try to study these 
 concepts by yourself. Also, as combinatorics and dynamic programming are closely related, do not 
 be surprised to use DP techniques to solve some of these problems.
 

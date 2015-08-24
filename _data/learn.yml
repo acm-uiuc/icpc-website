@@ -1,3 +1,7 @@
+- title: "CS 491 CAP Course Website"
+  link: "https://wiki.cites.illinois.edu/wiki/display/cs491cap/CS+491+CAP++Intro+to+Competitive+Algorithmic+Programming+Home"
+  description: "Lectures and practice problem sets covering different algorithmic programming topics. Being offered in Fall 2015 for credit."
+
 - title: "SPOJ"
   link: "http://www.spoj.com"
   description: "An online judge with all kinds of problems."
@@ -9,6 +13,10 @@
 - title: "UVa"
   link: "http://www.uva.onlinejudge.org"
   description: "Unversity of Valladoid online judge. Contains all problems from past ACM competitions including World Finals and many regionals."
+
+- title: "ACM-ICPC Live Archive"
+  link: "https://icpcarchive.ecs.baylor.edu/"
+  description: "Archive and online judge for past ACM ICPC Regionals and World Finals problems."
 
 - title: "POJ"
   link: "http://poj.org/"
@@ -33,6 +41,10 @@
 - title: "Competitive Programming"
   link: "https://sites.google.com/site/stevenhalim/"
   description: "The best book to learn algorithmic programming. Includes practice problems and solutions."
+
+- title: "USACO Training Program"
+  link: "http://train.usaco.org/usacogate"
+  description: "The training program for the USA Computing Olympiad. Great for ICPC and programming competition beginners."
 
 - title: "TopCoder Algorithm Tutorials"
   link: "http://www.topcoder.com/tc?d1=tutorials&d2=alg_index&module=Static"

@@ -183,6 +183,7 @@ h2.title {
   padding-right: 1.5em;
   padding-bottom: 1.5em;
   border-bottom: solid 1px #b8b8b8;
+  text-align: left;
 }
 
 .item > a > div {

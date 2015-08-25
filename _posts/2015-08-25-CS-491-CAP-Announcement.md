@@ -30,4 +30,4 @@ For an up-to-date schedule and information on other events throughout the
 semester, please refer to the [calendar][1] page.
 
 [1]: /calendar.html
-[2]: https://wiki.cites.illinois.edu/wiki/display/cs491cap/CS+491+CAP++Intro+to+Competitive+Algorithmic+Programming+Home
+[2]: https://wiki.cites.illinois.edu/wiki/display/cs491cap/Home

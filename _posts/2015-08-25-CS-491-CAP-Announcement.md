@@ -10,8 +10,11 @@ created a seminar course, CS 491 CAP, for the lecture portion of ICPC. The
 course will be held every Wednesday from 2-3 PM in Siebel 1131. In the 
 seminar, we will go over algorithms and data structures topics that will 
 appear during the Regionals and World Finals competitions and 
-assign problem sets for you to use to practice those concepts. The course 
-is mandatory for anyone interested in competing in the ICPC regionals this year.
+assign problem sets for you to use to practice those concepts. <strike>The course is mandatory for anyone interested in competing in the ICPC regionals this year.</strike> <b>UPDATE:</b> Completion of 
+course passing requirements, which are detailed in the [course syllabus][3],
+is mandatory for anyone interested in competing in the ICPC regionals this 
+year. You do not, however, need to sign up for or attend the course, though 
+it is highly encouraged.
 For more information, please visit the [course website][2].
 
 <br>
@@ -31,3 +34,4 @@ semester, please refer to the [calendar][1] page.
 
 [1]: /calendar.html
 [2]: https://wiki.cites.illinois.edu/wiki/display/cs491cap/Home
+[3]: https://wiki.cites.illinois.edu/wiki/display/cs491cap/Syllabus

@@ -1,6 +1,6 @@
 ---
 layout: post
-category: announcements
+category: practices
 time: 1:00 PM
 description: Tryouts will be on September 12th and September 19th
 ---

@@ -16,25 +16,11 @@ Tryout is this Saturday at 12:00PM!
 <b>Where:</b> DCL Basement Room 520L
 <br>
 
-<h1>Problem Set 2</h1>
+<h1>Problem Set 3</h1>
 We will be using the [Uva Online Judge][5] and [Peking Online Judge][8] for our problem sets.
 <br>
 This week’s problem set can be found here: [Problem Set 3][7]
 
-<h1>CS 491 CAP</h1>
-ICPC has a 1 credit hour seminar course this semester, CS 491 CAP.
-<br> 
-<b>When:</b> Fridays, 2 to 3 PM
-<br>
-<b>Where:</b> DCL 1310
-<br>
-<b>Prerequisite:</b> Proficiency in Java, C++, or C
-<br>
-<b>Resources:</b>
-<br>
-[Course Website][1]
-<br>
-[Piazza][4]
 
 [1]: https://wiki.cites.illinois.edu/wiki/display/cs491cap/Home
 [2]: https://www-s.acm.uiuc.edu/cgi-bin/mailman/listinfo/icpc-l

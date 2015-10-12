@@ -45,15 +45,15 @@ Congratulations to the following people, who made it onto teams for regionals!
 
   * Arthur Li
   * Haozhen Ding
-  * Shivam Gupta
+  * Jeongseok Son
 
 <br>
 
 **Team 6:**
 
-  * Jeongseok Son
   * Yu-De Chen
   * Animesh Tripathi
+  * Jing Huang
 
 <br>
 

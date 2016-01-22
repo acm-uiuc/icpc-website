@@ -10,7 +10,7 @@ ICPC!
 
 <br>
 
-Our first meeting of the semester will be on Tuesday, February 26th from 
+Our first meeting of the semester will be on Tuesday, January 26th from 
 6-8 PM in 0218 Siebel Center. Our first meeting will be a welcome meeting, 
 so we will be explaining how ICPC works and answering any questions about ICPC 
 that you may have. Bring anyone you know who might be interested 

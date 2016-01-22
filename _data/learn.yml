@@ -11,7 +11,7 @@
   description: "Provides an interface to search SPOJ problems by keyword."
 
 - title: "UVa"
-  link: "http://www.uva.onlinejudge.org"
+  link: "https://uva.onlinejudge.org/index.php"
   description: "Unversity of Valladoid online judge. Contains all problems from past ACM competitions including World Finals and many regionals."
 
 - title: "ACM-ICPC Live Archive"

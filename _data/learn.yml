@@ -1,6 +1,12 @@
 - title: "CS 491 CAP Course Website"
-  link: "https://wiki.cites.illinois.edu/wiki/display/cs491cap/Home"
-  description: "Lectures and practice problem sets covering different algorithmic programming topics. Being offered in Fall 2015 for credit."
+  link: "https://wiki.cites.illinois.edu/wiki/display/cs491capfa16/Home"
+  description: "Lectures and practice problem sets covering different algorithmic programming topics. Being 
+offered in Fall 2016 for credit."
+
+- title: "CS 491 WF Course Website"
+  link: "https://wiki.cites.illinois.edu/wiki/display/cs491wf/Home"
+  description: "Lectures and practice problem sets covering advanced algorithmic programming topics likely to be 
+seen at World Finals. Last offered in Spring 2016."
 
 - title: "SPOJ"
   link: "http://www.spoj.com"

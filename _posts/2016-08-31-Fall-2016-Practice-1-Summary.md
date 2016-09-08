@@ -23,7 +23,7 @@ Questions 6: [Codeforces 148B][6]
 <br>
 Questions 7: [Codeforces 1A][7]
 <br>
-Questions 7: [Codeforces 4A][8]
+Questions 8: [Codeforces 4A][8]
 <br>
 
 <h1> Advanced Questions: </h1>

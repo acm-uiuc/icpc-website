@@ -1,0 +1,128 @@
+---
+layout: default
+title: UIUC's ICPC Team Homepage
+---
+{% assign now = site.time | date: "%j" %}
+
+
+<!--
+<div><center>
+<font color="red">
+<h2 class="title" style="font-size:20pt">
+<b>Welcome back!</b> SIG-ICPC will be holding an informational practice on September 1st! In the meantime, check out the announcements below and <a href="https://www-s.acm.uiuc.edu/cgi-bin/mailman/listinfo/icpc-l">join our mailing list</a>!
+</h2>
+<br/>
+</font>
+<br/>
+</center></div>
+-->
+
+{% if site.data.message['show'] %}
+<div class="alert message">
+  <div class="head" style="border-bottom: none;">
+    <p>{{ site.data.message['message'] }}</p>
+    <div class="fa fa-bullhorn fa-lg"></div>
+  </div>
+  <div class="body"></div>
+</div>
+{% endif %}
+
+{% assign week = today - 7 %}
+{% if site.categories["announcements"] | size > 0 %}
+  <div class="alert announcement">
+    <div class="head">
+      <p>Hey! Here are the past week's announcements, latest first:
+      <div class="fa fa-comment fa-lg"></div>
+    </div>
+    <div class="body">
+      <ul class="list-group">
+        {% for announcement in site.categories["announcements"] %}
+          {% assign announcement_time = announcement.date | date: "%j" %}
+          {% assign age = now | minus: announcement_time %}
+          {% if age <= 7 %}
+          <li class="list-group-item">
+            <a href="{{ site.baseurl }}{{ announcement.url }}">
+              <h2>{{ announcement.title }} <span class="pull-right">{{ announcement.date | date: "%b %-d, %Y" }}</span></h2>
+              <div>
+                {% if announcement.description %}
+                  {{ announcement.description }}
+                {% else %}
+                  {{ announcement.content | strip_html | truncatewords:30 }}
+                {% endif %}
+              </div>
+            </a>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endif %}
+
+{% if site.categories["practices"] | size > 0 %}
+  {% for practice in site.categories["practices"] limit:1 %}
+  <a href="{{ site.baseurl }}{{ practice.url }}">
+  <div class="alert practice">
+    <div class="head">
+      <p>Review the latest practice from
+      <b>{{ practice.date | date: "%b %-d, %Y" }}</b>.</p>
+      <div class="fa fa-code fa-lg"></div>
+    </div>
+    <div class="body">
+      <h2>{{ practice.title }}</h2>
+      <div>
+        {% if practice.description %}
+          {{ practice.description }}
+        {% else %}
+          {{ practice.content | strip_html | truncatewords:30 }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  </a>
+  {% endfor %}
+{% endif %}
+
+<div class="item">
+  <a>
+    <h2 class="title">The Competition</h2>
+    <div>
+      ICPC is the world's oldest and most prestigious algorithmic programming competition.
+      During ICPC competitions, teams of three university students compete to solve as many challenging
+      programming problems as they can within 5 hours. The tournament is separated
+      into multiple stages; for US teams, it consists of a <b>Regionals</b> competition
+      and the <b>World Finals</b>. The top
+      teams in each region advance to the World Finals, which
+      is held in a different country each year.
+    </div>
+  </a>
+</div>
+
+<div class="item">
+  <a>
+    <h2 class="title">The Group</h2>
+    <div>
+      SIG-ICPC is for anyone who enjoys competitive programming or challenging
+      algorithmic problems, but is particularly targeted towards those who
+      want to do well in ICPC competitions. We meet every week to explain how to
+      solve problems that appear in ICPC and other programming competitions and
+      to practice solving challenging problems.
+    </div>
+    <div>
+      You do not need to be a computer science student to participate in our
+      practices or the ICPC competitions -- we welcome everyone who has an
+      interest in learning algorithmic programming!
+    </div>
+    <div>
+      In addition to helping in programming competitions, algorithmic
+      problem-solving skills are incredibly helpful for technical interviews.
+      Doing well in ICPC is also a great resume booster for getting a job at
+      a top company.
+    </div>
+    <div>
+      <strong>
+        In the past 10 years, our school has advanced to World Finals 8 times. Help us continue this legacy!
+      </strong>
+    </div>
+  </a>
+</div>

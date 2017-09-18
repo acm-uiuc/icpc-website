@@ -24,6 +24,14 @@ a {
   text-decoration: none;
 }
 
+div a {
+  color: #3366BB;
+}
+
+div a:hover {
+  text-decoration: underline;
+}
+
 p {
   margin: 0 0 0;
 }

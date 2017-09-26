@@ -10,27 +10,29 @@
       </h1>
     </div>
 
-    <div class="navitem {% if page.title == 'Announcements' or page.category == 'announcements' %}active{% endif %}">
+    <div class="navitem {% if page.title == 'Illinois Programming League' %}active{% endif %}">
       <div class="navlink"
-            style="width:150px;"> <!-- TODO: Pullout styling from this file. -->
-        <a href="{{ site.baseurl }}/announcements.html">
-          Announcements
+            style="width:70px;">
+        <a href="{{ site.baseurl }}/ipl.html">
+          IPL
         </a>
       </div>
     </div>
+
+    <div class="navitem {% if page.title == 'Practices' or page.category == 'practices' %}active{% endif %}">
+      <div class="navlink"
+            style="width:100px;">
+        <a href="{{ site.baseurl }}/practices.html">
+            Solutions
+        </a>
+      </div>
+    </div>
+
     <div class="navitem {% if page.title == 'Calendar' %}active{% endif %}">
       <div class="navlink"
             style="width:100px;">
         <a href="{{ site.baseurl }}/calendar.html">
           Calendar
-        </a>
-      </div>
-    </div>
-    <div class="navitem {% if page.title == 'Practices' or page.category == 'practices' %}active{% endif %}">
-      <div class="navlink"
-            style="width:100px;">
-        <a href="{{ site.baseurl }}/practices.html">
-          Practices
         </a>
       </div>
     </div>
@@ -51,15 +53,6 @@
       </div>
     </div>
 
-    <div class="navitem {% if page.title == 'Illinois Programming League' %}active{% endif %}">
-      <div class="navlink"
-            style="width:70px;">
-        <a href="{{ site.baseurl }}/ipl.html">
-          IPL
-        </a>
-      </div>
-    </div>
-	
     <div class="navitem">
       <h1 class="brand right">
         <a href="http://www.acm.uiuc.edu/">

@@ -450,6 +450,23 @@ a.contact {
   color: #3c763d;
 }
 
+/* Solutions */
+
+.solution {
+  margin-bottom: 3em;
+  color: #3c763d;
+  border: solid 1px #d6e9c6;
+  background-color: #dff0d8;
+}
+
+.solution > .head {
+  border-bottom: solid 1px #d6e9c6;
+}
+
+.solution > .head > .fa {
+  color: #3c763d;
+}
+
 /* Hero Image */
 
 .warbanner {

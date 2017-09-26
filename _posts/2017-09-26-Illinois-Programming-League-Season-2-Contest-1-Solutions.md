@@ -43,14 +43,14 @@ Then, for a given \\(X\\), we only need to find the smallest \\(n\\) where \\(\f
 
 **Sample Solution:** [kangaroo.py]
 
-#**Connectivity**
+# **Connectivity**
 First, we create 2 graphs \\(G_{road}\\) and \\(G_{railway}\\) where the the sets of vertices of these graphs represent the cities. There is an edge connecting two nodes \\(A, B\\) in \\(G_{road}\\) if there is a road connecting city \\(A\\) and city \\(B\\). Similarly, we can define the edges for \\(G_{railway}\\). Then, we can find all the connected components in \\(G_{road}\\) (using BFS or DFS) and number these components in some order. Then, let us define \\(x_A\\) be the component that contains node \\(A\\) (city \\(A\\)) in \\(G_{road}\\). We can do the same thing for \\(G_{railway}\\) and let \\(y_A\\) be the component that contains node \\(A\\) (city \\(A\\)) in \\(G_{railway}\\). Then, 2 cities \\(A, B\\) are connected by both roads and railways if and only if \\(x_A = x_B\\) and \\(y_A = y_B\\). We can then count \\(c(x, y)\\) which is the number of node \\(A\\) where \\(x_A = x\\) and \\(y_A = y\\) for all \\((x, y)\\). (i.e using \\(std::map\\) in \\(C++\\)). Then, for city \\(A\\), the number of other cities connected with \\(A\\) using both roads and railways is \\(c(x_A, y_A)\\).
 
 **Complexity:** O(\\(n\log{n}\\))
 
 **Sample Solution:** [connectivity.cpp]
 
-#**Array GCD**
+# **Array GCD**
 Since we are not allowed to remove the whole array, either \\(a_1\\) or \\(a_n\\) must be kept in the result array. Moreover, since we can only add or subtract at most 1 from each element, the result array must contain at least one of the following values \\(a_1, a_1 - 1, a_1 + 1, a_n, a_n - 1, a_n + 1\\). Since the GCD of all the elements in the result array is greater than 1, all of these elements have to be divisible by some prime factor \\(d\\). Then, \\(d\\) can only be one of the prime factors of \\(a_1, a_1 - 1, a_1 + 1, a_n, a_n - 1, a_n + 1\\). The number of \\(d\\) should be O(\\(\log{v}\\)) where \\(v = max\{a_1, a_1 - 1, a_1 + 1, a_n, a_n - 1, a_n + 1\}\\).
 
 Then, for each prime factor \\(d\\), we need to compute the minimum amount of money we have to pay to transform the array into another array where all elements are divisible by \\(d\\). This can be done using dynamic programming with \\(f[index][\textit{not deleting yet/deleting/done deleting}]\\) to be the minimum amount of money to transform first \\(index\\) elements where we either haven't deleted any elements yet / are deleting / have done deleting.

@@ -1,3 +1,8 @@
+site:
+    owner:
+        disque-shortname: icpc-cs-illinois-edu
+comments: true
+
 name: ACM@UIUC ICPC
 markdown: kramdown
 redcarpet:

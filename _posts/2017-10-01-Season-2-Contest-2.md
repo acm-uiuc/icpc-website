@@ -5,12 +5,22 @@ time: 20:00 PM
 description: Solutions for both Freshman and Open Divisions.
 ---
 # **Find Remainder**
+For each pair of \\(A, B\\), we are asked to output the remainder for A divided by B. This is accomplished by operator \\(%\\) in most programming languages. 
 
-**Sample Solution:** [filename1]
+**Complexity:** O(1)
+
+**Sample Solution:** [A-remain.cpp]
 
 # **Puppy and Sum**
+Observe that we can write the recursive definition of \\(sum\\): 
 
-**Sample Solution:** [filename2]
+\\(sum(D, N) = sum(1, sum(D-1, N))\\)  for \\(D > 1\\)
+
+\\(sum(1, N) = sum(N) = \frac{N * (N+1)}{2}\\) 
+
+**Complexity:** O(\\(D\\))
+
+**Sample Solution:** [B-ppsum.cpp]
 
 # **AtCoDeer and Election Report**
 

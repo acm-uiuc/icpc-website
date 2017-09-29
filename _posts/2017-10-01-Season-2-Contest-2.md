@@ -34,16 +34,16 @@ Observe that we can write the recursive definition of \\(sum\\):
 
 **Sample Solution:** [filename5]
 
-# **Restore Graph**
+# **Lego Blocks**
 
 **Sample Solution:** [filename6]
 
-# **Lego Blocks**
+# **Nice SubSegments**
 
 **Sample Solution:** [filename7]
 
-[filename1]: /assets/ipl_solutions/season2/contest2/filename1
-[filename2]: /assets/ipl_solutions/season2/contest2/filename2
+[A-remain.cpp]: /assets/ipl_solutions/season2/contest2/A-remain.cpp
+[B-ppsum.cpp]: /assets/ipl_solutions/season2/contest2/B-ppsum.cpp
 [filename3]: /assets/ipl_solutions/season2/contest2/filename3
 [filename4]: /assets/ipl_solutions/season2/contest2/filename4
 [filename5]: /assets/ipl_solutions/season2/contest2/filename5

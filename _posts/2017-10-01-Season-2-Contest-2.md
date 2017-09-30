@@ -9,7 +9,7 @@ For each pair of \\(A, B\\), we are asked to output the remainder for A divided 
 
 **Complexity:** O(1)
 
-**Sample Solution:** [A-remain.cpp]
+**Sample Solution:** [remain.cpp]
 
 # **Puppy and Sum**
 Observe that we can write the recursive definition of \\(sum\\): 
@@ -20,7 +20,7 @@ Observe that we can write the recursive definition of \\(sum\\):
 
 **Complexity:** O(\\(D\\))
 
-**Sample Solution:** [B-ppsum.cpp]
+**Sample Solution:** [ppsum.cpp]
 
 # **AtCoDeer and Election Report**
 
@@ -45,8 +45,33 @@ so use fast IO (for example, scanf, printf in C++) can help speed things up.
 **Sample Solution:** [marathon.cpp]
 
 # **Restore Graph**
+We first notice that, if there exists a graph satisfying the requirements, then
+the must at least exists a tree that also satisfies such requirements. Recall that
+a tree is a connected acyclic graph. We should also notice that, there should exists
+exactly one vertex \\(i\\) such that \\(d[i] = 0\\).
 
-**Sample Solution:** [filename5]
+Now, let us sort the vertices \\(u_1, u_2, ..., u_n\\) such that: \\(d[u_1] \leq 
+d[u_2] \leq ... \leq d[u_n]\\). Then, if \\(d[u_1] \neq 0\\), there exists no graph 
+that satisfies the requirement. Otherwise, let us try to build a valid tree.
+
+We maintain \\(n\\) stacks \\(s[0], s[1], ..., s[n - 1]\\) where \\(s[i]\\) contains
+vertices \\(u\\) such that \\(d[u] = i\\) and the current degree of \\(u\\) is at
+most \\(k - 1\\). Then, we can push \\(u_1\\) into \\(s[0]\\) and mark degree of
+\\(u_1\\) as 0. Now, for each \\(i\\) from \\(2 \to n\\) we do the following:
+    - Get vetex \\(v\\) on top of stack \\(s[d[u_i] - 1]\\). If the stack is empty,
+we stop the algorithm and reports that no such graph exists. 
+    - Next, we add an edge connecting \\(v\\) and \\(u_i\\), increase the degree of 
+\\(v\\) and mark the degree of \\(u_i\\) as 1.
+    - Push \\(u_i\\) onto \\(s[d[u_i]]\\).
+    - If degree of \\(v\\) is \\(k\\), remove \\(v\\) from \\(s[d[u_i] - 1]\\).
+
+At each step, if there are many vertices \\(v\\) that we can connect \\(u_i\\) to,
+it does not matter which \\(v\\) we choose to do so. Therefore, the algorithm
+guarantees to find the tree with given requirements if there exists one.
+
+**Time Complexity:** O(\\(n\\))
+
+**Sample Solution:** [restore]
 
 # **Lego Blocks**
 A typical DP problem. Notice that all blocks are of height 1, and only differ
@@ -103,13 +128,38 @@ the time complexity will be O(\\(NM + TM^2\\)).
 **Sample Solution:** [lego.cpp]
 
 # **Nice SubSegments**
+Let \\(d_i = x_{i + 1} - x_i\\) for all \\(1 \leq i < n\\). Then, if \\(x_i, x_{i + 1}, 
+x_{i + 2}, ..., x_{j - 1}, x_j\\) form a nice subsequence, then we have \\(d_i = d_{i + 1}
+= d_{i + 2} = ... = d_{j - 1} = 1\\). Thus, we can solve this problem using segment tree (for 
+those who are not familiar with segment tree, you can find everything you need here
+http://codeforces.com/blog/entry/15729).
+
+We will maintain a segment tree that contains information of \\(d_1, d_2, ..., d_{n - 1}\\), 
+where for each node \((k\)) containing information of \\(d_l, d_{l + 1}, ..., d_r\\), we will
+store three information:
+
+- \\(T[k].L\\): The longest consecutive subsequence containing all 1 that starts at \\(l\\).
+- \\(T[k].R\\): The longest consecutive subsequence containing all 1 that ends at \\(r\\).
+- \\(T[k].M\\): The longest consecutive subsequence containing all 1 in \\([l..r]\\).
+
+Then, let \\(k_L, k_R\\) be the left and right child of \\(k\\):
+
+- If the whole segment controlled by \\(k_L\\) is 1, \\(T[k].L = T[k_L].L + T[k_R].L\\). 
+Otherwise, \\(T[k].L = T[k_L].L\\).
+- Similarly, we have either \\(T[k].R = T[k_R].R + T[k_L].R\\) or \\(T[k].R = T[k_R].R\\).
+- \\(T[k].M = max(T[k].L, T[k].R, T[k_L].M, T[k_R].M, T[k_L].R + T[k_R].L)\\)
+
+Then, for each query, we can easily update the value of \\(d\\) in O(\\(\log{n}\\)) and 
+get the result in O(1).
+
+**Time Complexity:** O(\\(q\log{n}\\))
 
 **Sample Solution:** [filename7]
 
-[A-remain.cpp]: /assets/ipl_solutions/season2/contest2/A-remain.cpp
-[B-ppsum.cpp]: /assets/ipl_solutions/season2/contest2/B-ppsum.cpp
+[remain.cpp]: /assets/ipl_solutions/season2/contest2/remain.cpp
+[ppsum.cpp]: /assets/ipl_solutions/season2/contest2/ppsum.cpp
 [filename3]: /assets/ipl_solutions/season2/contest2/filename3
 [marathon.cpp]: /assets/ipl_solutions/season2/contest2/marathon.cpp
-[filename5]: /assets/ipl_solutions/season2/contest2/filename5
+[restore]: /assets/ipl_solutions/season2/contest2/restore
 [lego.cpp]: /assets/ipl_solutions/season2/contest2/lego.cpp
 [filename7]: /assets/ipl_solutions/season2/contest2/filename7

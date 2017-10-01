@@ -23,8 +23,27 @@ Observe that we can write the recursive definition of \\(sum\\):
 **Sample Solution:** [ppsum.cpp]
 
 # **AtCoDeer and Election Report**
+The key to solve this problem is to realize that the number of votes each candidate
+gets is non-decreasing. 
 
-**Sample Solution:** [filename3]
+Let \\(t_k\\) be the minimum number of votes Takahashi gets at time \\(k\\) (right after
+AtCoDeer checked the report), and \\(a_k\\) for Aoki respectively.
+
+Then at time \\(1\\), \\(t_1 = T_1\\) and \\(a_1 = A_1\\), since
+\\(T_k\\) and \\(A_k\\) are coprime.
+
+At time \\(k > 1\\), we want \\(t_k\\) and \\(a_k\\) to be barely
+larger than (or equal to) \\(t_{k-1}\\) and \\(a_{k-1}\\), and satisfy the ratio \\(T_k : A_k\\).
+Therefore, we need to find the minimum integer \\(n\\) such that 
+\\(n T_k \geq t_{k-1}\\) and \\(n A_k \geq a_{k-1}\\).
+Note it is very inefficient to compute \\(n\\) using a while loop, since
+the numbers get big really quickly. Instead, use integer division. 
+Floating point division and the ceiling function would also work, not highly NOT recommended.
+
+Repeat the process and update the votes for time $k = 2, 3, ..., N$, and you get the final result.
+**Complexity:** O(\\(N\\))
+
+**Sample Solution:** [election.cpp]
 
 # **Marathon**
 The hardest part of this problem is about using floating point. 
@@ -158,7 +177,7 @@ get the result in O(1).
 
 [remain.cpp]: /assets/ipl_solutions/season2/contest2/remain.cpp
 [ppsum.cpp]: /assets/ipl_solutions/season2/contest2/ppsum.cpp
-[filename3]: /assets/ipl_solutions/season2/contest2/filename3
+[filename3]: /assets/ipl_solutions/season2/contest2/election.cpp
 [marathon.cpp]: /assets/ipl_solutions/season2/contest2/marathon.cpp
 [restore]: /assets/ipl_solutions/season2/contest2/restore
 [lego.cpp]: /assets/ipl_solutions/season2/contest2/lego.cpp

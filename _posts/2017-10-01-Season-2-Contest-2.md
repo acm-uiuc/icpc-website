@@ -93,7 +93,7 @@ guarantees to find the tree with given requirements if there exists one.
 
 **Time Complexity:** O(\\(n\\))
 
-**Sample Solution:** [restore]
+**Sample Solution:** [restore.cpp]
 
 # **Lego Blocks**
 A typical DP problem. Notice that all blocks are of height 1, and only differ
@@ -176,12 +176,12 @@ get the result in O(1).
 
 **Time Complexity:** O(\\(q\log{n}\\))
 
-**Sample Solution:** [subsgm]
+**Sample Solution:** [subsgm.cpp]
 
 [remain.cpp]: /assets/ipl_solutions/season2/contest2/remain.cpp
 [ppsum.cpp]: /assets/ipl_solutions/season2/contest2/ppsum.cpp
 [election.cpp]: /assets/ipl_solutions/season2/contest2/election.cpp
 [marathon.cpp]: /assets/ipl_solutions/season2/contest2/marathon.cpp
-[restore]: /assets/ipl_solutions/season2/contest2/restore
+[restore.cpp]: /assets/ipl_solutions/season2/contest2/restore.cpp
 [lego.cpp]: /assets/ipl_solutions/season2/contest2/lego.cpp
-[subsgm]: /assets/ipl_solutions/season2/contest2/subsgm
+[subsgm.cpp]: /assets/ipl_solutions/season2/contest2/subsgm.cpp

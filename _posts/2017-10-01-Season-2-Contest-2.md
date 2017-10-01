@@ -42,7 +42,7 @@ Floating point division and the ceiling function would also work, but highly NOT
 
 Repeat the process and update the votes for time \\(k = 2, 3, ..., N\\), and you get the final result.
 
-Also since the result could be as big as \\(10^18\\), it is necessary to use 64-bit integers. 
+Also since the result could be as big as \\(10^{18}\\), it is necessary to use 64-bit integers. 
 
 **Complexity:** O(\\(N\\))
 

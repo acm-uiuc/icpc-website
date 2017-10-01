@@ -38,9 +38,11 @@ Therefore, we need to find the minimum integer \\(n\\) such that
 \\(n T_k \geq t_{k-1}\\) and \\(n A_k \geq a_{k-1}\\).
 Note it is very inefficient to compute \\(n\\) using a while loop, since
 the numbers get big really quickly. Instead, use integer division. 
-Floating point division and the ceiling function would also work, not highly NOT recommended.
+Floating point division and the ceiling function would also work, but highly NOT recommended.
 
-Repeat the process and update the votes for time $k = 2, 3, ..., N$, and you get the final result.
+Repeat the process and update the votes for time \\(k = 2, 3, ..., N\\), and you get the final result.
+
+Also since the result could be as big as \\(10^18\\), it is necessary to use 64-bit integers. 
 
 **Complexity:** O(\\(N\\))
 
@@ -178,7 +180,7 @@ get the result in O(1).
 
 [remain.cpp]: /assets/ipl_solutions/season2/contest2/remain.cpp
 [ppsum.cpp]: /assets/ipl_solutions/season2/contest2/ppsum.cpp
-[filename3]: /assets/ipl_solutions/season2/contest2/election.cpp
+[election.cpp]: /assets/ipl_solutions/season2/contest2/election.cpp
 [marathon.cpp]: /assets/ipl_solutions/season2/contest2/marathon.cpp
 [restore]: /assets/ipl_solutions/season2/contest2/restore
 [lego.cpp]: /assets/ipl_solutions/season2/contest2/lego.cpp

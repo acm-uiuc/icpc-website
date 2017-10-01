@@ -41,6 +41,7 @@ the numbers get big really quickly. Instead, use integer division.
 Floating point division and the ceiling function would also work, not highly NOT recommended.
 
 Repeat the process and update the votes for time $k = 2, 3, ..., N$, and you get the final result.
+
 **Complexity:** O(\\(N\\))
 
 **Sample Solution:** [election.cpp]

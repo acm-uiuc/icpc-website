@@ -4,14 +4,14 @@ category: solutions
 time: 20:00 PM
 description: Solutions for both Freshman and Open Divisions.
 ---
-# **Find Remainder**
+# **[Find Remainder](https://www.codechef.com/problems/FLOW002)**
 For each pair of \\(A, B\\), we are asked to output the remainder for A divided by B. This is accomplished by operator \\(%\\) in most programming languages. 
 
 **Complexity:** O(1)
 
 **Sample Solution:** [remain.cpp]
 
-# **Puppy and Sum**
+# **[Puppy and Sum](https://www.codechef.com/problems/PPSUM)**
 Observe that we can write the recursive definition of \\(sum\\): 
 
 \\(sum(D, N) = sum(1, sum(D-1, N))\\)  for \\(D > 1\\)
@@ -22,7 +22,7 @@ Observe that we can write the recursive definition of \\(sum\\):
 
 **Sample Solution:** [ppsum.cpp]
 
-# **AtCoDeer and Election Report**
+# **[AtCoDeer and Election Report](http://abc046.contest.atcoder.jp/tasks/arc062_a?lang=en)**
 The key to solve this problem is to realize that the number of votes each candidate
 gets is non-decreasing. 
 
@@ -48,7 +48,7 @@ Also since the result could be as big as \\(10^{18}\\), it is necessary to use 6
 
 **Sample Solution:** [election.cpp]
 
-# **Marathon**
+# **[Marathon](http://codeforces.com/problemset/problem/404/B)**
 The hardest part of this problem is about using floating point. 
 Dealing with floating point numbers is very tricky due to precision issues, 
 so if it is possible, by all means we should
@@ -66,7 +66,7 @@ so use fast IO (for example, scanf, printf in C++) can help speed things up.
 
 **Sample Solution:** [marathon.cpp]
 
-# **Restore Graph**
+# **[Restore Graph](http://codeforces.com/problemset/problem/404/C)**
 We first notice that, if there exists a graph satisfying the requirements, then
 the must at least exists a tree that also satisfies such requirements. Recall that
 a tree is a connected acyclic graph. We should also notice that, there should exists
@@ -95,7 +95,7 @@ guarantees to find the tree with given requirements if there exists one.
 
 **Sample Solution:** [restore.cpp]
 
-# **Lego Blocks**
+# **[Lego Blocks](https://www.hackerrank.com/contests/codesprint-practice/challenges/lego-blocks)**
 A typical DP problem. Notice that all blocks are of height 1, and only differ
 in widths.
 
@@ -149,7 +149,7 @@ the time complexity will be O(\\(NM + TM^2\\)).
 
 **Sample Solution:** [lego.cpp]
 
-# **Nice SubSegments**
+# **[Nice SubSegments](https://www.codechef.com/problems/SUBSGM)**
 Let \\(d_i = x_{i + 1} - x_i\\) for all \\(1 \leq i < n\\). Then, if \\(x_i, x_{i + 1}, 
 x_{i + 2}, ..., x_{j - 1}, x_j\\) form a nice subsequence, then we have \\(d_i = d_{i + 1}
 = d_{i + 2} = ... = d_{j - 1} = 1\\). Thus, we can solve this problem using segment tree (for 

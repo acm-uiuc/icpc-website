@@ -8,19 +8,19 @@ description: Solutions for both Freshman and Open Divisions.
 Since there are only three locations and three roads, we can just enumerate all the possible shortest paths 
 
 Patrick could take and take the minimum:
-* (house -> shop 1 -> shop 2 -> house) or (house -> shop 2 -> shop 1 -> house) : \(s_1 = d_1 + d_2 + d_3\)
-* (house -> shop 1 -> shop 2 -> shop 1 -> house) : \(s_2 = d_1 + d_3 + d_3 + d_1\)
-* (house -> shop 2 -> shop 1 -> shop 2 -> house) : \(s_3 = d_2 + d_3 + d_3 + d_2\)
-* (house -> shop 1 -> house -> shop 2 -> house) or (house -> shop 2 -> house -> shop 1 -> house) : \(s_4 = 2d_1 + 2d_2\)
+* (house -> shop 1 -> shop 2 -> house) or (house -> shop 2 -> shop 1 -> house) : \\(s_1 = d_1 + d_2 + d_3\\)
+* (house -> shop 1 -> shop 2 -> shop 1 -> house) : \\(s_2 = d_1 + d_3 + d_3 + d_1\\)
+* (house -> shop 2 -> shop 1 -> shop 2 -> house) : \\(s_3 = d_2 + d_3 + d_3 + d_2\\)
+* (house -> shop 1 -> house -> shop 2 -> house) or (house -> shop 2 -> house -> shop 1 -> house) : \\(s_4 = 2d_1 + 2d_2\\)
 
-Then the answer is \(\min(s_1, s_2, s_3, s_4)\).
+Then the answer is \\(\min(s_1, s_2, s_3, s_4)\\).
 
 Alternatively, you can think of it in this way: what if we use
 * all the three roads?
 * two of the three roads?
 * only one road?
 
-**Complexity:** O\(1\)
+**Complexity:** O\\(1\\)
 
 **Sample Solution:** [shopping.cpp]
 
@@ -28,20 +28,20 @@ Alternatively, you can think of it in this way: what if we use
 Here are two easy ways to calculate the sum of digits of each number:
 * Treat each line of the input as an integer, use the mod operator to get the last digit (mod by 10) and keep dividing the number by 10 until it is zero.
   - **Sample Solution:** [digits1.cpp]
-* Treat each line of the input as a string, and calculate \(\sum (c_i - '0')\), where \(c_i\) is the \(i^{th}\) character.
+* Treat each line of the input as a string, and compute \\(\sum (c_i - '0')\\), where \\(c_i\\) is the \\(i^{th}\\) character.
   - Why does this work? Ascii code.
   - **Sample Solution:** [digits2.cpp]
-- **Complexity:** O\(T \log N\)
+- **Complexity:** O\\(T \log N\\)
 
 # **[Second Order Statistics](http://codeforces.com/problemset/problem/22/A)**
 The problem is pretty straight forward: find the smallest element that is strictly greater than the minimum.
-When all the \(n\) numbers are the same, this element does not exist and you should output "NO".
+When all the \\(n\\) numbers are the same, this element does not exist and you should output "NO".
 Here are 2 ways to solve this problem:
 * Sort the whole array (using a library function) in increasing order and then use a loop to find the first element that is different from the minimum one.
-  - **Complexity:** O\(n \log n\)
+  - **Complexity:** O\\(n \log n\\)
   - **Sample Solution:** [sos_method1.cpp]
-* First use a loop to find the minimum element \(m\), then use another loop to find the minimum element that is different from \(m\).
-  - **Complexity:** O\(n\)
+* First use a loop to find the minimum element \\(m\\), then use another loop to find the minimum element that is different from \\(m\\).
+  - **Complexity:** O\\(n\\)
   - **Sample Solution:** [sos_method2.cpp]
 
 # **[Cinema Line](http://codeforces.com/problemset/problem/349/A)**

@@ -120,7 +120,9 @@ Then, our answer is
 
 **Complexity:** O(\\(3^nn\\))
 
-**Sample Solution:** [deadends.cpp]
+**Sample Solution:** 
+[digits1.cpp]: /assets/ipl_solutions/season2/contest3/digits1.cpp
+[digits2.cpp]: /assets/ipl_solutions/season2/contest3/digits2.cpp
 [shopping.cpp]: /assets/ipl_solutions/season2/contest3/shopping.cpp
 [sos_method1.cpp]: /assets/ipl_solutions/season2/contest3/sos_method1.cpp
 [sos_method2.cpp]: /assets/ipl_solutions/season2/contest3/sos_method2.cpp

@@ -20,7 +20,7 @@ Alternatively, you can think of it in this way: what if we use
 * two of the three roads?
 * only one road?
 
-**Complexity:** O\\(1\\)
+**Complexity:** O\\((1)\\)
 
 **Sample Solution:** [shopping.cpp]
 
@@ -31,17 +31,18 @@ Here are two easy ways to calculate the sum of digits of each number:
 * Treat each line of the input as a string, and compute \\(\sum (c_i - '0')\\), where \\(c_i\\) is the \\(i^{th}\\) character.
   - Why does this work? Ascii code.
   - **Sample Solution:** [digits2.cpp]
-- **Complexity:** O\\(T \log N\\)
+
+**Complexity:** O\\((T \log N)\\)
 
 # **[Second Order Statistics](http://codeforces.com/problemset/problem/22/A)**
 The problem is pretty straight forward: find the smallest element that is strictly greater than the minimum.
 When all the \\(n\\) numbers are the same, this element does not exist and you should output "NO".
 Here are 2 ways to solve this problem:
 * Sort the whole array (using a library function) in increasing order and then use a loop to find the first element that is different from the minimum one.
-  - **Complexity:** O\\(n \log n\\)
+  - **Complexity:** O\\((n \log n)\\)
   - **Sample Solution:** [sos_method1.cpp]
 * First use a loop to find the minimum element \\(m\\), then use another loop to find the minimum element that is different from \\(m\\).
-  - **Complexity:** O\\(n\\)
+  - **Complexity:** O\\((n)\\)
   - **Sample Solution:** [sos_method2.cpp]
 
 # **[Cinema Line](http://codeforces.com/problemset/problem/349/A)**

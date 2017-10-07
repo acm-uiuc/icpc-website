@@ -6,17 +6,22 @@ description: Solutions for both Freshman and Open Divisions.
 ---
 # **[Patrick and Shopping](http://codeforces.com/problemset/problem/599/A)**
 Since there are only three locations and three roads, we can just enumerate all the possible shortest paths 
+
 Patrick could take and take the minimum:
 * (house -> shop 1 -> shop 2 -> house) or (house -> shop 2 -> shop 1 -> house) : \(s_1 = d_1 + d_2 + d_3\)
 * (house -> shop 1 -> shop 2 -> shop 1 -> house) : \(s_2 = d_1 + d_3 + d_3 + d_1\)
 * (house -> shop 2 -> shop 1 -> shop 2 -> house) : \(s_3 = d_2 + d_3 + d_3 + d_2\)
 * (house -> shop 1 -> house -> shop 2 -> house) or (house -> shop 2 -> house -> shop 1 -> house) : \(s_4 = 2d_1 + 2d_2\)
+
 Then the answer is \(\min(s_1, s_2, s_3, s_4)\).
+
 Alternatively, you can think of it in this way: what if we use
 * all the three roads?
 * two of the three roads?
 * only one road?
+
 **Complexity:** O\(1\)
+
 **Sample Solution:** [shopping.cpp]
 
 # **[Sum of Digits](https://www.codechef.com/problems/FLOW006)**
@@ -120,7 +125,8 @@ Then, our answer is
 
 **Complexity:** O(\\(3^nn\\))
 
-**Sample Solution:** 
+**Sample Solution:** [deadends.cpp]
+
 [digits1.cpp]: /assets/ipl_solutions/season2/contest3/digits1.cpp
 [digits2.cpp]: /assets/ipl_solutions/season2/contest3/digits2.cpp
 [shopping.cpp]: /assets/ipl_solutions/season2/contest3/shopping.cpp

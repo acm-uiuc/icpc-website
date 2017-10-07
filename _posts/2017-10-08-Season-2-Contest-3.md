@@ -4,6 +4,41 @@ category: solutions
 time: 20:00 PM
 description: Solutions for both Freshman and Open Divisions.
 ---
+# **[Patrick and Shopping](http://codeforces.com/problemset/problem/599/A)**
+Since there are only three locations and three roads, we can just enumerate all the possible shortest paths 
+Patrick could take and take the minimum:
+* (house -> shop 1 -> shop 2 -> house) or (house -> shop 2 -> shop 1 -> house) : \(s_1 = d_1 + d_2 + d_3\)
+* (house -> shop 1 -> shop 2 -> shop 1 -> house) : \(s_2 = d_1 + d_3 + d_3 + d_1\)
+* (house -> shop 2 -> shop 1 -> shop 2 -> house) : \(s_3 = d_2 + d_3 + d_3 + d_2\)
+* (house -> shop 1 -> house -> shop 2 -> house) or (house -> shop 2 -> house -> shop 1 -> house) : \(s_4 = 2d_1 + 2d_2\)
+Then the answer is \(\min(s_1, s_2, s_3, s_4)\).
+Alternatively, you can think of it in this way: what if we use
+* all the three roads?
+* two of the three roads?
+* only one road?
+**Complexity:** O\(1\)
+**Sample Solution:** [shopping.cpp]
+
+# **[Sum of Digits](https://www.codechef.com/problems/FLOW006)**
+Here are two easy ways to calculate the sum of digits of each number:
+* Treat each line of the input as an integer, use the mod operator to get the last digit (mod by 10) and keep dividing the number by 10 until it is zero.
+  - **Sample Solution:** [digits1.cpp]
+* Treat each line of the input as a string, and calculate \(\sum (c_i - '0')\), where \(c_i\) is the \(i^{th}\) character.
+  - Why does this work? Ascii code.
+  - **Sample Solution:** [digits2.cpp]
+- **Complexity:** O\(T \log N\)
+
+# **[Second Order Statistics](http://codeforces.com/problemset/problem/22/A)**
+The problem is pretty straight forward: find the smallest element that is strictly greater than the minimum.
+When all the \(n\) numbers are the same, this element does not exist and you should output "NO".
+Here are 2 ways to solve this problem:
+* Sort the whole array (using a library function) in increasing order and then use a loop to find the first element that is different from the minimum one.
+  - **Complexity:** O\(n \log n\)
+  - **Sample Solution:** [sos_method1.cpp]
+* First use a loop to find the minimum element \(m\), then use another loop to find the minimum element that is different from \(m\).
+  - **Complexity:** O\(n\)
+  - **Sample Solution:** [sos_method2.cpp]
+
 # **[Cinema Line](http://codeforces.com/problemset/problem/349/A)**
 Since we cannot change the order of customers, we can simply run a sequential simulation through all the bills and check if all changes can be satisfied. We keep track of the number of 25 and 50 bills that the seller is holding. Consider three cases: 
 * An incoming 25 bill. No change is required. 
@@ -25,7 +60,7 @@ First, observe that there is a solution iff \\(n-1 <= m <= 2(n+1)\\). for \\(n <
 
 # **[Maze](http://codeforces.com/problemset/problem/377/A)**
 Let the number of empty cells be \\(e\\). Since we know that all empty cell in the given maze forms 
-a connected area (any empty cell can reach any other empty cell), we can start from an arbitrary 
+a connected area (any empty cell can reac h any other empty cell), we can start from an arbitrary 
 empty cell \\(x\\) and search for exactly \\((e - k - 1)\\) empty cells that are connected to \\(x\\)
 (using BFS or DFS). Then, these \\(e - k - 1\\) along with \\(x\\) cells form a connected area. We can 
 then turn all empty cells that does not belong to the chosen cells to walls.
@@ -86,7 +121,9 @@ Then, our answer is
 **Complexity:** O(\\(3^nn\\))
 
 **Sample Solution:** [deadends.cpp]
-
+[shopping.cpp]: /assets/ipl_solutions/season2/contest3/shopping.cpp
+[sos_method1.cpp]: /assets/ipl_solutions/season2/contest3/sos_method1.cpp
+[sos_method2.cpp]: /assets/ipl_solutions/season2/contest3/sos_method2.cpp
 [cinema.cpp]: /assets/ipl_solutions/season2/contest3/cinema.cpp
 [team.cpp]: /assets/ipl_solutions/season2/contest3/team.cpp
 [maze.cpp]: /assets/ipl_solutions/season2/contest3/maze.cpp

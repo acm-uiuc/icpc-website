@@ -3,12 +3,25 @@ layout: default
 title: Scoreboard
 ---
 
-<div class="item">
-    <h1 class="title">Open Division</h1>
-    <br>
+<h1 class="title">Open Division</h1>
+<br>
+
+<div class="tab">
+    <button class="open_tablinks" 
+        onclick="displayScoreboard(event, 'open_w3')" 
+        id="open_week3"
+    >
+        Week 3
+    </button>
+    <button class="open_tablinks" 
+        onclick="displayScoreboard(event, 'open_w4')" 
+        id="open_week4"
+    >
+        Week 4
+    </button>
 </div>
 
-<div class="item">
+<div id="open_w3" class="open_tabcontent">
     <table style="width:100%">
     <tr>
         <th>Rank</th>
@@ -143,12 +156,181 @@ title: Scoreboard
     </table> 
 </div>
 
-<div class="item">
-    <h1 class="title">Freshman Division</h1>
-    <br>
+<div id="open_w4" class="open_tabcontent">
+    <table style="width:100%">
+        <tr>
+            <th>Rank</th>
+            <th>ID</th>
+            <th>Rating</th>
+        </tr>
+        <tr>
+        	<td> 1 </td>
+        	<td> zexuan2 </td>
+        	<td> 1249 </td>
+        </tr>
+        <tr>
+        	<td> 2 </td>
+        	<td> sxie12 </td>
+        	<td> 1201 </td>
+        </tr>
+        <tr>
+        	<td> 3 </td>
+        	<td> jrday2 </td>
+        	<td> 1086 </td>
+        </tr>
+        <tr>
+        	<td> 4 </td>
+        	<td> Kailang </td>
+        	<td> 1048 </td>
+        </tr>
+        <tr>
+        	<td> 5 </td>
+        	<td> zihanw2 </td>
+        	<td> 1018 </td>
+        </tr>
+        <tr>
+        	<td> 6 </td>
+        	<td> takeshisuzuki </td>
+        	<td> 891 </td>
+        </tr>
+        <tr>
+        	<td> 7 </td>
+        	<td> jpbloom2 </td>
+        	<td> 845 </td>
+        </tr>
+        <tr>
+        	<td> 8 </td>
+        	<td> acao6 </td>
+        	<td> 809 </td>
+        </tr>
+        <tr>
+        	<td> 9 </td>
+        	<td> black_box </td>
+        	<td> 729 </td>
+        </tr>
+        <tr>
+        	<td> 10 </td>
+        	<td> anjietu2 </td>
+        	<td> 694 </td>
+        </tr>
+        <tr>
+        	<td> 11 </td>
+        	<td> txu25 </td>
+        	<td> 675 </td>
+        </tr>
+        <tr>
+        	<td> 12 </td>
+        	<td> nick_leung </td>
+        	<td> 602 </td>
+        </tr>
+        <tr>
+        	<td> 13 </td>
+        	<td> lostandfoundii </td>
+        	<td> 592 </td>
+        </tr>
+        <tr>
+        	<td> 14 </td>
+        	<td> guptashvm </td>
+        	<td> 544 </td>
+        </tr>
+        <tr>
+        	<td> 15 </td>
+        	<td> tem2 </td>
+        	<td> 514 </td>
+        </tr>
+        <tr>
+        	<td> 16 </td>
+        	<td> ygong10 </td>
+        	<td> 480 </td>
+        </tr>
+        <tr>
+        	<td> 17 </td>
+        	<td> aukey2 </td>
+        	<td> 408 </td>
+        </tr>
+        <tr>
+        	<td> 18 </td>
+        	<td> MezMeRriZze </td>
+        	<td> 326 </td>
+        </tr>
+        <tr>
+        	<td> 19 </td>
+        	<td> bibakse2 </td>
+        	<td> 302 </td>
+        </tr>
+        <tr>
+        	<td> 20 </td>
+        	<td> davidb2 </td>
+        	<td> 275 </td>
+        </tr>
+        <tr>
+        	<td> 21 </td>
+        	<td> ankiths2 </td>
+        	<td> 259 </td>
+        </tr>
+        <tr>
+        	<td> 22 </td>
+        	<td> johnlq2 </td>
+        	<td> 258 </td>
+        </tr>
+        <tr>
+        	<td> 23 </td>
+        	<td> jhutter12 </td>
+        	<td> 254 </td>
+        </tr>
+        <tr>
+        	<td> 24 </td>
+        	<td> malisper </td>
+        	<td> 251 </td>
+        </tr>
+        <tr>
+        	<td> 25 </td>
+        	<td> rohank2 </td>
+        	<td> 243 </td>
+        </tr>
+        <tr>
+        	<td> 26 </td>
+        	<td> cherian2106 </td>
+        	<td> 196 </td>
+        </tr>
+        <tr>
+        	<td> 27 </td>
+        	<td> skcheun2 </td>
+        	<td> 196 </td>
+        </tr>
+        <tr>
+        	<td> 28 </td>
+        	<td> gundamroge </td>
+        	<td> 187 </td>
+        </tr>
+        <tr>
+        	<td> 29 </td>
+        	<td> kenwei93 </td>
+        	<td> 186 </td>
+        </tr>
+    </table>
 </div>
 
-<div class="item">
+<br>
+<h1 class="title">Freshman Division</h1>
+<br>
+
+<div class="tab">
+    <button class="freshman_tablinks" 
+        onclick="displayScoreboard(event, 'freshman_w3')" 
+        id="freshman_week3"
+    >
+        Week 3
+    </button>
+    <button class="freshman_tablinks" 
+        onclick="displayScoreboard(event, 'freshman_w4')" 
+        id="freshman_week4"
+    >
+        Week 4
+    </button>
+</div>
+    
+<div id="freshman_w3" class="freshman_tabcontent">
     <table style="width:100%">
     <tr>
         <th>Rank</th>
@@ -270,4 +452,188 @@ title: Scoreboard
     	<td> sriramr2 </td>
     	<td> 186 </td>
     </tr>
+    </table>
 </div>
+
+<div id="freshman_w4" class="freshman_tabcontent">
+    <table style="width:100%">
+        <tr>
+            <th>Rank</th>
+            <th>ID</th>
+            <th>Rating</th>
+        </tr>
+        <tr>
+        	<td> 1 </td>
+        	<td> ASankaran </td>
+        	<td> 1294 </td>
+        </tr>
+        <tr>
+        	<td> 2 </td>
+        	<td> bts2 </td>
+        	<td> 1042 </td>
+        </tr>
+        <tr>
+        	<td> 3 </td>
+        	<td> kaempen2 </td>
+        	<td> 1040 </td>
+        </tr>
+        <tr>
+        	<td> 4 </td>
+        	<td> shreyc2 </td>
+        	<td> 994 </td>
+        </tr>
+        <tr>
+        	<td> 5 </td>
+        	<td> joan2 </td>
+        	<td> 790 </td>
+        </tr>
+        <tr>
+        	<td> 6 </td>
+        	<td> df100 </td>
+        	<td> 771 </td>
+        </tr>
+        <tr>
+        	<td> 7 </td>
+        	<td> rohinb2 </td>
+        	<td> 752 </td>
+        </tr>
+        <tr>
+        	<td> 8 </td>
+        	<td> bmw4 </td>
+        	<td> 686 </td>
+        </tr>
+        <tr>
+        	<td> 9 </td>
+        	<td> ssethia2 </td>
+        	<td> 661 </td>
+        </tr>
+        <tr>
+        	<td> 10 </td>
+        	<td> obpira </td>
+        	<td> 598 </td>
+        </tr>
+        <tr>
+        	<td> 11 </td>
+        	<td> Jackah2 </td>
+        	<td> 559 </td>
+        </tr>
+        <tr>
+        	<td> 12 </td>
+        	<td> Ichiro </td>
+        	<td> 555 </td>
+        </tr>
+        <tr>
+        	<td> 13 </td>
+        	<td> ishanp2 </td>
+        	<td> 508 </td>
+        </tr>
+        <tr>
+        	<td> 14 </td>
+        	<td> smodi9 </td>
+        	<td> 494 </td>
+        </tr>
+        <tr>
+        	<td> 15 </td>
+        	<td> johnlq2 </td>
+        	<td> 311 </td>
+        </tr>
+        <tr>
+        	<td> 16 </td>
+        	<td> zl20 </td>
+        	<td> 306 </td>
+        </tr>
+        <tr>
+        	<td> 17 </td>
+        	<td> Scott0129 </td>
+        	<td> 291 </td>
+        </tr>
+        <tr>
+        	<td> 18 </td>
+        	<td> ns10 </td>
+        	<td> 284 </td>
+        </tr>
+        <tr>
+        	<td> 19 </td>
+        	<td> nju2 </td>
+        	<td> 265 </td>
+        </tr>
+        <tr>
+        	<td> 20 </td>
+        	<td> bdubs </td>
+        	<td> 261 </td>
+        </tr>
+        <tr>
+        	<td> 21 </td>
+        	<td> yaba12 </td>
+        	<td> 248 </td>
+        </tr>
+        <tr>
+        	<td> 22 </td>
+        	<td> vibhavk2 </td>
+        	<td> 230 </td>
+        </tr>
+        <tr>
+        	<td> 23 </td>
+        	<td> brianwang1217 </td>
+        	<td> 222 </td>
+        </tr>
+        <tr>
+        	<td> 24 </td>
+        	<td> taylorc2 </td>
+        	<td> 216 </td>
+        </tr>
+        <tr>
+        	<td> 25 </td>
+        	<td> bharatboj </td>
+        	<td> 207 </td>
+        </tr>
+        <tr>
+        	<td> 26 </td>
+        	<td> ruiqip2 </td>
+        	<td> 198 </td>
+        </tr>
+        <tr>
+        	<td> 27 </td>
+        	<td> tusharj2 </td>
+        	<td> 193 </td>
+        </tr>
+        <tr>
+        	<td> 28 </td>
+        	<td> sriramr2 </td>
+        	<td> 186 </td>
+        </tr>
+    </table>
+</div>
+
+<script>
+function displayScoreboard(evt, weekNum) {
+    // Declare all variables
+    var i, tabcontent, tablinks, tabcontentName, tablinkName;
+
+    if (weekNum.charAt(0) == 'o') {
+        tabcontentName = "open_tabcontent";
+        tablinkName = "open_tablinks";
+    }
+    else {
+        tabcontentName = "freshman_tabcontent"
+        tablinkName = "freshman_tablinks";
+    }
+
+    tabcontent = document.getElementsByClassName(tabcontentName);
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName(tablinkName);
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(weekNum).style.display = "block";
+    evt.currentTarget.className += " active";
+} 
+
+document.getElementById("open_week4").click();
+document.getElementById("freshman_week4").click();
+</script>

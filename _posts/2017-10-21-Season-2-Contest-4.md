@@ -29,5 +29,34 @@ If the word has <= 10 letters, print the string itself. Otherwise, print the fir
 
 **Sample Solution:** [words.cpp]
 
+# **[Valera and X](http://codeforces.com/problemset/problem/404/A)**
+
+Simply check whether all symbols on the two diagonals are the same, and that
+all symbols off the diagonals are the same, also symbols on and off diagonals
+are different.
+
+**Complexity:** O(\\(n^2\\))
+
+**Sample Solution:** [x.cpp]
+
+# **[Dubious Document](http://arc071.contest.atcoder.jp/tasks/arc071_a)**
+For each character, we are trying to find the maximum number \\(c\\)
+such that this character appears in every string at least \\(c\\) times.
+
+Iterate through each string and count the frequency of each character.
+Take the minimum frequency of each character across all strings.
+
+At last, print the lexicographically smallest string composed of these
+characters, where each character appears its minimum frequency number of times.
+
+**Complexity:** O(\\(|S|\\)) where \\(|S|\\) is the total string length.
+
+**Sample Solution:** [document.cpp]
+
+
 [petya.cpp]: /assets/ipl_solutions/season2/contest4/petya.cpp
+[physicist.cpp]: /assets/ipl_solutions/season2/contest4/physicist.cpp
+[words.cpp]: /assets/ipl_solutions/season2/contest4/words.cpp
+[x.cpp]: /assets/ipl_solutions/season2/contest4/x.cpp
+[document.cpp]: /assets/ipl_solutions/season2/contest4/document.cpp
 

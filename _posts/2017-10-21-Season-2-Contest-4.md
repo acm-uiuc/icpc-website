@@ -49,14 +49,35 @@ Take the minimum frequency of each character across all strings.
 At last, print the lexicographically smallest string composed of these
 characters, where each character appears its minimum frequency number of times.
 
-**Complexity:** O(\\(|S|\\)) where \\(|S|\\) is the total string length.
+**Complexity:** O(\\(\|S\|\\)) where \\(\|S\|\\) is the total string length.
 
 **Sample Solution:** [document.cpp]
 
+# **[Missile Silos](http://codeforces.com/problemset/problem/144/D)**
+First use Dijkstra's algorithm to calculate the shortest path from starting 
+city \\(s\\).
+
+If a city happen to be \\(l\\) distance away from \\(s\\), then we have a silo
+in that city.
+
+For roads, it is more complicated. Consider the endpoints of a road be
+\\(u, v\\), and the length of the road be \\(w\\).
+If shortest path \\(dist\\)from \\(u\\) to \\(s\\) is smaller than 
+\\(l\\), but \\(dist + w > l\\), then we know it is possible to have a silo
+on this road. However, we also need to make sure the silo cannot have a 
+shorter path which goes the direction of \\(v\\). Otherwise, this silo location
+is invalid. Same reasoning for the other city \\(v\\). Also it is possible
+a silo, when goes either direction on the road, has a shortest path of length
+\\(l\\) on both directions. We need to avoid double counting here.
+
+**Complexity:** O(\\(\|E\| + \|V\|\log\|V\|\\))
+
+**Sample Solution:** [missile.cpp]
 
 [petya.cpp]: /assets/ipl_solutions/season2/contest4/petya.cpp
 [physicist.cpp]: /assets/ipl_solutions/season2/contest4/physicist.cpp
 [words.cpp]: /assets/ipl_solutions/season2/contest4/words.cpp
 [x.cpp]: /assets/ipl_solutions/season2/contest4/x.cpp
 [document.cpp]: /assets/ipl_solutions/season2/contest4/document.cpp
+[missile.cpp]: /assets/ipl_solutions/season2/contest4/missile.cpp
 

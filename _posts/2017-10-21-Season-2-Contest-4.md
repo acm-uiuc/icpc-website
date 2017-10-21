@@ -53,6 +53,15 @@ characters, where each character appears its minimum frequency number of times.
 
 **Sample Solution:** [document.cpp]
 
+# **[Pairwise And Sum](https://www.codechef.com/problems/AND)**
+
+It is impractical to take the AND value of every pair and add them up, since N=10^5 and the complexity will be O(N^2). \\
+In many bitwise operation problems, the bits can be regarded as independent. In particular, if each number can be represented by three bits, then \\(a_2 a_1 a_0 AND b_2 b_1 b_0 = a_2 0 0 AND b_2 0 0 + 0 a_1 0 AND 0 b_1 0 + 0 0 a_0 AND 0 0 b_0\\). Therefore, we can decompose every number into power-of-2's, compute the pairwise sum for each digit, and add them up. Computing pairwise sum for a specified digit is trivial: simply count the numbers in which that binary digit is 1, and use C(cnt, 2) = cnt * (cnt - 1) / 2 (and don't forget to multiply by the corresponding power of 2). 
+
+**Complexity:** O(\\(N\log(\max(A_i))\\))
+
+**Sample Solution:** [andsum.cpp]
+
 # **[Missile Silos](http://codeforces.com/problemset/problem/144/D)**
 First use Dijkstra's algorithm to calculate the shortest path from starting 
 city \\(s\\).
@@ -80,4 +89,5 @@ a silo, when goes either direction on the road, has a shortest path of length
 [x.cpp]: /assets/ipl_solutions/season2/contest4/x.cpp
 [document.cpp]: /assets/ipl_solutions/season2/contest4/document.cpp
 [missile.cpp]: /assets/ipl_solutions/season2/contest4/missile.cpp
+[andsum.cpp]: /assets/ipl_solutions/season2/contest4/andsum.cpp
 

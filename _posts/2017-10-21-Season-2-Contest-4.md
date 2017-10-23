@@ -4,7 +4,7 @@ category: solutions
 time: 20:00 PM
 description: Solutions for both Freshman and Open Divisions.
 ---
-# **Petya and Strings**
+# **[Petya and Strings](http://codeforces.com/problemset/problem/112/A)**
 
 You are asked to compare two strings, without distinguishing upper and lower cases. You may first convert all characters in both strings to upper case without affecting the result. Since the two strings are of same length, simply iterate through the index and report the result on the first occurrence of disagreement between the strings. Report zero if no difference is found. 
 
@@ -13,7 +13,7 @@ You are asked to compare two strings, without distinguishing upper and lower cas
 **Sample Solution:** [petya.cpp]
 
 
-# **Yound Physicists**
+# **[Yound Physicists](http://codeforces.com/problemset/problem/69/A)**
 
 The sum vector is zero iff the sum of each component is zero. So the object is idle iff \\(\Sigma{x_i}, \Sigma{y_i}, Sigma{z_i}\\) are all zero. 
 
@@ -21,11 +21,11 @@ The sum vector is zero iff the sum of each component is zero. So the object is i
 
 **Sample Solution:** [physicist.cpp]
 
-# **Way too long words**
+# **[Way too long words](http://codeforces.com/problemset/problem/71/A)**
 
 If the word has <= 10 letters, print the string itself. Otherwise, print the first character, and then the length of input string minus 2, and then the last character. 
 
-**Complexity:** O(\\(|S|\\))
+**Complexity:** O(\\(\|S\|\\))
 
 **Sample Solution:** [words.cpp]
 
@@ -83,6 +83,26 @@ a silo, when goes either direction on the road, has a shortest path of length
 
 **Sample Solution:** [missile.cpp]
 
+# **[Most Distant Points](https://www.codechef.com/problems/MOSTDIST)**
+To solve this problem, we need to know the following observation. Suppose we are having two points \\((x_1, y_1)\\)
+and \\((x_2, y_2)\\). Then, the Manhattan distance between these points can be rewritten as
+\begin{equation}
+ |x_1 - x_2| + |y_1 - y_2| = max\\{x_1 - x_2, x_2 - x_1\\} + max\\{y_1 - y_2, y_2 - y_1\\}
+\end{equation}
+
+With such observation, we can maintain 4 priority queues \\(h_{x + y}, h_{x - y}, h_{y - x}, h_{-x - y}\\). Then, for
+each type of query, we can:
+- \\(+\\) \\(x\\) \\(y\\): When we have a new point \\((x, y)\\), we will add \\(x + y, x - y, y - x, -x - y\\) to the 4 queues
+\\(h_{x + y}, h_{x - y}, h_{y - x}, h_{-x - y}\\) respectively.
+- \\(-\\) \\(N\\): To remove a point, we basically will not do anything. We only remove the \\(N_{th}\\) point when it is
+on top of the queue (any queue). That is, we only remove it when necessary.
+- \\(?\\) \\(x\\) \\(y\\): To get the maximum Manhattan distance from \\((x, y)\\) to the current points, we get the maximum values of:
+\\(x + y + h_{-x - y}.top\\), \\(x - y + h_{y - x}.top\\), \\(y - x + h_{x - y}.top\\), \\(-x - y + h_{x + y}.top\\).
+
+**Complexity:** O(\\(Q\log{N}\\))
+
+**Sample Solution:** [mostdist.cpp]
+
 [petya.cpp]: /assets/ipl_solutions/season2/contest4/petya.cpp
 [physicist.cpp]: /assets/ipl_solutions/season2/contest4/physicist.cpp
 [words.cpp]: /assets/ipl_solutions/season2/contest4/words.cpp
@@ -90,4 +110,4 @@ a silo, when goes either direction on the road, has a shortest path of length
 [document.cpp]: /assets/ipl_solutions/season2/contest4/document.cpp
 [missile.cpp]: /assets/ipl_solutions/season2/contest4/missile.cpp
 [andsum.cpp]: /assets/ipl_solutions/season2/contest4/andsum.cpp
-
+[mostdist.cpp]: /assets/ipl_solutions/season2/contest4/mostdist.cpp

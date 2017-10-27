@@ -38,7 +38,7 @@ int N;
 vector<point> points;
 vector<point> hull;
 
-bool not_clockwise(int i) {
+bool clockwise(int i) {
     int cross_prod = cross(hull.back() - hull[hull.size() - 2], 
             points[i] - hull[hull.size() - 2]);
     return dcmp(cross_prod) <= 0;
@@ -53,17 +53,17 @@ int main() {
 
     sort(points.begin(), points.end());
 
-    // Construct upper hull
+    // Construct lower hull
     for (int i = 0; i < N; i++) {
-        while (hull.size() > 1 && not_clockwise(i))
+        while (hull.size() > 1 && clockwise(i))
             hull.pop_back();  
         hull.push_back(points[i]);
     }
 
-    // Construct lower hull
+    // Construct upper hull
     int k = hull.size();
     for (int i = N - 2; i >= 0; i--) {
-        while (hull.size() > k && not_clockwise(i))
+        while (hull.size() > k && clockwise(i))
             hull.pop_back();
         hull.push_back(points[i]);
     }

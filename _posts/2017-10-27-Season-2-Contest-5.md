@@ -23,5 +23,18 @@ Simply count how many \(a_i\) has the same parity with \(s\) and we're done.
 
 **Sample Solution:** TBA
 
-[petya.cpp]: /assets/ipl_solutions/season2/contest4/petya.cpp
+# **[Polygon](https://www.codechef.com/problems/CF224)** 
+Straightforward application of convex hull. The most common algorithms used
+to calculate convex hull are [Graham's Algorithm] and its variants. 
 
+The sample solution uses one of the variants [Monotone Chain].
+This variant will construct the upper hull and lower hull separately. But the
+core idea is identical to the standard Graham Scan.
+
+**Compexity:** O(\\(n\log n\\))
+
+**Sample Solution:** [polygon.cpp]
+
+[polygon.cpp]: /assets/ipl_solutions/season2/contest5/polygon.cpp
+[Graham's Algorithm]: https://en.wikipedia.org/wiki/Graham_scan
+[Monotone Chain]: https://en.wikibooks.org/wiki/Algorithm_Implementation/Geometry/Convex_hull/Monotone_chain

@@ -23,6 +23,29 @@ Simply count how many \(a_i\) has the same parity with \(s\) and we're done.
 
 **Sample Solution:** TBA
 
+# **[The Guessing Game](https://www.codechef.com/problems/A3)**
+The key idea is to transform this problem into an interval problem. 
+
+Take the first sample as an example.
+Consider the response "> 100 No". This response can be seen as interval
+[1, 100]. Similarly, the response "< 100 No" can be transformed into interval
+[100, 1000000000]. 
+
+After transforming all responses into intervals, the task
+becomes to find the maximum number of intervals covering a single  point. 
+Subtracting this number from the total number of hints
+gives the minimum number of lies.
+
+In implementation, we only need to store the end points of each interval and 
+sort them. 
+At each endpoint, if it is the start of an interval, we increase the
+counter by 1, otherwise, decrease by 1. This way, we only need \\(k\log k\\)
+time for sorting, and linear time for processing each end point.
+
+**Complexity:** O(\\(k\log k\\)) for each test case.
+
+**Sample Solution:** [guessing.cpp]
+
 # **[Polygon](https://www.codechef.com/problems/CF224)** 
 Straightforward application of convex hull. The most common algorithms used
 to calculate convex hull are [Graham's Algorithm] and its variants. 
@@ -35,6 +58,7 @@ core idea is identical to the standard Graham Scan.
 
 **Sample Solution:** [polygon.cpp]
 
+[guessing.cpp]: /assets/ipl_solutions/season2/contest5/guessing.cpp
 [polygon.cpp]: /assets/ipl_solutions/season2/contest5/polygon.cpp
 [Graham's Algorithm]: https://en.wikipedia.org/wiki/Graham_scan
 [Monotone Chain]: https://en.wikibooks.org/wiki/Algorithm_Implementation/Geometry/Convex_hull/Monotone_chain

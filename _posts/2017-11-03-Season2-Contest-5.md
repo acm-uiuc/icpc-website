@@ -49,6 +49,7 @@ and the minimum one is the answer. Be careful with boundry cases.
 **Sample Solution:** [puzzles.cpp]
 
 
+
 # **[Mike and Strings](http://codeforces.com/problemset/problem/798/B)**
 Notice that if a solution exists, then it is possible to obtain it by transforming the first string a certain number of times.
 Therefore, we enumerate over the strings obtained by transorming the first string, and see if it is possible to 
@@ -58,6 +59,58 @@ transform all the rest strings into the same form. If yes, do it in the way with
 
 **Sample Solution:** [strings.cpp]
 **A More Compact Solution:** [strings.py]
+
+
+# **[Robot Movings](https://www.codechef.com/problems/MOVES)**
+This problem is in fact a combinatorics problem.
+We try to find the number of ways we can make down turns, and also the 
+number of ways to we can make right turns.
+
+Consider \\(N, K\\). 
+
+If \\(K\\) is odd, then we can either
+
+* Make more down turns than right turns. To be specific, we can
+make \\((K + 1) / 2\\) down turns and \\((K - 1) / 2\\) right turns.
+However since the last down turn will always happen at the last column,
+we can only choose the positions of \\((K - 1) / 2\\) down turns 
+
+* Make more right turns than down turns. This case is actually symmetric to the
+previous one.
+
+If \\(K\\) is even, then we will always make the same number of 
+right turns and down turns. However be careful  that the last turn is always 
+going to happen at the last column or last row, so we cannot choose the position
+for that turn.
+
+Then the problem becomes to find the values of
+\\(\binom{n}{k}\\) where \\(n, k \le 5000\\). Simply construct
+Pascal's triangle level by level will have time complexity of O(\\(n^2\\)), 
+which is acceptable for this problem given \\(n\\) is at most 5000.
+
+In fact, we can also calculate \\(\binom{n}{k}\\) directly by using 
+the formula \\(\binom{n}{k} = \frac{n!}{k!(n - k)!}\\). Since we are working
+under mod \\(p = 1000000007\\), we cannot do the calculation naively, because
+\\(n! \mod p\\) might not be divisible by \\(k!(n - k)! \mod p\\). Instead,
+we find the inverses of \\(k!\\) and \\((n - k)!\\) under mod \\(p\\).
+
+Since \\(p\\) is prime, by Fermat's Little Theorem, we have
+\\(a^{p - 1} \equiv 1 \mod p\\) as long as \\(p\\) does not divide \\(a\\).
+So we have \\((a)(a^{p - 2}) \equiv 1 \mod p\\). Then we have
+\\(a^{p - 2}\\) to be the inverse of \\(a\\) under mod \\(p\\). 
+
+Because we are working under mod \\(p\\) for all factorials, the value of 
+factorial will always be smaller than \\(p\\), 
+and so \\(p\\) does not divide the factorial.
+Hence Fermat's Little Theorem is applicable and  we can use the 
+aforementioned way to find the inverses of each factorial,
+and finally apply the formula.
+
+Note the sample solution uses this faster linear solution.
+
+**Complexity:** O(\\(N + T\\)) where \\(T\\) is the number of test cases.
+
+**Sample Solution:** [robot.cpp]
 
 
 # **[The Guessing Game](https://www.codechef.com/problems/A3)**
@@ -102,6 +155,7 @@ core idea is identical to the standard Graham Scan.
 [strings.cpp]: /assets/ipl_solutions/season2/contest5/strings.cpp
 [strings.py]: /assets/ipl_solutions/season2/contest5/strings.py
 [puzzles.cpp]: /assets/ipl_solutions/season2/contest5/puzzles.cpp
+[robot.cpp]: /assets/ipl_solutions/season2/contest5/robot.cpp
 [guessing.cpp]: /assets/ipl_solutions/season2/contest5/guessing.cpp
 [polygon.cpp]: /assets/ipl_solutions/season2/contest5/polygon.cpp
 [Graham's Algorithm]: https://en.wikipedia.org/wiki/Graham_scan

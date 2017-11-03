@@ -4,24 +4,36 @@ category: solutions
 time: 20:00 PM
 description: Solutions for both Freshman and Open Divisions.
 ---
-# **Chips**
-Simple simulation problem. Keep track of the number of chips you have (initially \(m\)), and 
-for each walruse, try to deduct the number of chips it wants. If the remaining number is non negative, we're good
-to move on to the next walruse. If the remaning number is negative, then we have run out of chips and 
-you should print out \(0\) and stop the process.
+# **[Chips](http://codeforces.com/problemset/problem/92/A)**
+Simple simulation problem. Keep track of the number of chips you have (initially \(m\)). Then set a loop variable \(i\) to \(1\), which stands for the number of the current walruse. Then repeat the following steps:
+* check if \(i\) is less than the current number of chips
+  - yes: give \(i\) chips to the \(i^{th}\) walruse and deduct it from the current total
+  - no: output the current number of chips and terminate the program
+* increment \(i\) by \(1\)
+  - if \(i = n\), set \(i\) back to \(1\)
 
-**Complexity:** O(\\(n\\))
+**Complexity:** O(\\(\frac{m}{n}\\))
 
-**Sample Solution:** TBA
+**Sample Solution:** [chips.cpp]
 
-# **Cookies**
+# **[Cookies](http://codeforces.com/problemset/problem/129/A)**
 First calculate the total number of cookies \(s\). In order for the number of cookies remaining to be
 even, the number of cookies in the bag Olga steals must have the same parity with \(s\). 
 Simply count how many \(a_i\) has the same parity with \(s\) and we're done.
 
 **Complexity:** O(\\(n\\))
 
-**Sample Solution:** TBA
+**Sample Solution:** [cookies.cpp]
+
+
+
+# **[Life Without Zeros](http://codeforces.com/problemset/problem/75/A)**
+
+**Complexity:** O(\\(n\\))
+
+**Sample Solution:** 
+
+
 
 # **[The Guessing Game](https://www.codechef.com/problems/A3)**
 The key idea is to transform this problem into an interval problem. 
@@ -58,6 +70,9 @@ core idea is identical to the standard Graham Scan.
 
 **Sample Solution:** [polygon.cpp]
 
+
+[chips.cpp]: /assets/ipl_solutions/season2/contest5/chips.cpp
+[cookies.cpp]: /assets/ipl_solutions/season2/contest5/cookies.cpp
 [guessing.cpp]: /assets/ipl_solutions/season2/contest5/guessing.cpp
 [polygon.cpp]: /assets/ipl_solutions/season2/contest5/polygon.cpp
 [Graham's Algorithm]: https://en.wikipedia.org/wiki/Graham_scan

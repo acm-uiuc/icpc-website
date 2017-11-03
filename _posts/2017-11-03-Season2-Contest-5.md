@@ -9,7 +9,7 @@ Simple simulation problem. Keep track of the number of chips you have (initially
 * check if \\(i\\) is less than the current number of chips
   - yes: give \\(i\\) chips to the \\(i^{th}\\) walruse and deduct it from the current total
   - no: output the current number of chips and terminate the program
-* increment \\(i\) by \\(1\)
+* increment \\(i\\) by \\(1\\)
   - if \\(i = n\\), set \\(i\\) back to \\(1\\)
 
 **Complexity:** O(\\(\frac{m}{n}\\))
@@ -17,9 +17,9 @@ Simple simulation problem. Keep track of the number of chips you have (initially
 **Sample Solution:** [chips.cpp]
 
 # **[Cookies](http://codeforces.com/problemset/problem/129/A)**
-First calculate the total number of cookies \(s\). In order for the number of cookies remaining to be
-even, the number of cookies in the bag Olga steals must have the same parity with \(s\). 
-Simply count how many \(a_i\) has the same parity with \(s\) and we're done.
+First calculate the total number of cookies \\(s\\). In order for the number of cookies remaining to be
+even, the number of cookies in the bag Olga steals must have the same parity with \\(s\\). 
+Simply count how many \\(a_i\\) has the same parity with \\(s\\) and we're done.
 
 **Complexity:** O(\\(n\\))
 
@@ -33,9 +33,10 @@ takes an integer and returns the corresponding integer with all zeros removed.
 This can be done by either
 * converting the integer to string, remove the zeros, and then convert it back
 * modular arithmetics 
+
 Then you just need to check if remove_zeros(a + b) is equal to remove_zeros(a) + remove_zeros(b).
 
-**Complexity:** O(\\(\log \max (a, b)\\))
+**Complexity:** O(\\(\log (\max (a, b))\\))
 
 **Sample Solution:** [zeros.cpp]
 
@@ -58,6 +59,7 @@ transform all the rest strings into the same form. If yes, do it in the way with
 **Complexity:** O(\\(m^3 n\\))
 
 **Sample Solution:** [strings.cpp]
+
 **A More Compact Solution:** [strings.py]
 
 

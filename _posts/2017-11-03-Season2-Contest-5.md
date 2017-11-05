@@ -6,11 +6,11 @@ description: Solutions for both Freshman and Open Divisions.
 ---
 # **[Chips](http://codeforces.com/problemset/problem/92/A)**
 Simple simulation problem. Keep track of the number of chips you have (initially \\(m\\)). Then set a loop variable \\(i\\) to \\\(1\\), which stands for the number of the current walruse. Then repeat the following steps:
-* check if \\(i\\) is less than the current number of chips
-  - yes: give \\(i\\) chips to the \\(i^{th}\\) walruse and deduct it from the current total
-  - no: output the current number of chips and terminate the program
-* increment \\(i\\) by \\(1\\)
-  - if \\(i = n\\), set \\(i\\) back to \\(1\\)
+* Check if \\(i\\) is less than the current number of chips
+  - Yes: give \\(i\\) chips to the \\(i^{th}\\) walruse and deduct it from the current total
+  - No: output the current number of chips and terminate the program
+* Increment \\(i\\) by \\(1\\)
+  - If \\(i = n\\), set \\(i\\) back to \\(1\\)
 
 **Complexity:** O(\\(\frac{m}{n}\\))
 
@@ -31,8 +31,8 @@ Simply count how many \\(a_i\\) has the same parity with \\(s\\) and we're done.
 A straight forward way so solve this problem, is to implement a function remove_zeros that
 takes an integer and returns the corresponding integer with all zeros removed. 
 This can be done by either
-* converting the integer to string, remove the zeros, and then convert it back
-* modular arithmetics 
+* Converting the integer to string, remove the zeros, and then convert it back
+* Modular arithmetics 
 
 Then you just need to check if remove_zeros(a + b) is equal to remove_zeros(a) + remove_zeros(b).
 

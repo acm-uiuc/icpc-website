@@ -61,6 +61,12 @@ title: Scoreboard
     >
         Week 11
     </button>
+    <button class="open_tablinks" 
+        onclick="displayScoreboard(event, 'open_w12')" 
+        id="open_week12"
+    >
+        Week 12
+    </button>
 </div>
 
 <div id="open_w3" class="open_tabcontent">
@@ -1932,6 +1938,12 @@ title: Scoreboard
     >
         Week 11
     </button>
+    <button class="freshman_tablinks" 
+        onclick="displayScoreboard(event, 'freshman_w12')" 
+        id="freshman_week12"
+    >
+        Week 12
+    </button>
 </div>
     
 <div id="freshman_w3" class="freshman_tabcontent">
@@ -3558,6 +3570,6 @@ function displayScoreboard(evt, weekNum) {
     evt.currentTarget.className += " active";
 } 
 
-document.getElementById("open_week11").click();
-document.getElementById("freshman_week11").click();
+document.getElementById("open_week12").click();
+document.getElementById("freshman_week12").click();
 </script>

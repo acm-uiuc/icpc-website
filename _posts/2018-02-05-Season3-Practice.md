@@ -5,6 +5,16 @@ time: 20:00 PM
 description: Solutions for the practice contest
 ---
 
+# **[A + B Problem](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1000)**
+
+**Sample Solution:** [ab.cpp]
+
+# **[Speed Limit](https://open.kattis.com/problems/speedlimit)**
+
+Note that the input time is cumulative. 
+
+**Sample Solution:** [speed.cpp]
+
 # **[Queries on a Binary Tree](https://www.codechef.com/problems/BINTREEQ)**
 Let \\((w, t)\\) be a pair which has the same path configuration as 
 \\((u, v)\\). Let \\(p = LCA(w, t)\\) be the lowest common ancestor of 
@@ -25,4 +35,6 @@ to follow (Hint: parity determines whether \\(n'\\) is able to follow or not).
 
 **Sample Solution:** [btree.cpp]
 
+[ab.cpp]: /assets/ipl_solutions/season3/practice/ab.cpp
+[speed.cpp]: /assets/ipl_solutions/season3/practice/speed.cpp
 [btree.cpp]: /assets/ipl_solutions/season3/practice/btree.cpp

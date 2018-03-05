@@ -25,6 +25,12 @@ title: Scoreboard
     >
         Week 3
     </button>
+    <button class="open_tablinks" 
+        onclick="displayScoreboard(event, 'open_w4')" 
+        id="open_week4"
+    >
+        Week 4
+    </button>
 </div>
 
 <div id='open_w1' class='open_tabcontent'>
@@ -294,6 +300,121 @@ Attendance bonus for those who came will be added at the end of the season.</b>
 </table>
 </div>
 
+<div id='open_w4' class='open_tabcontent'>
+<table style="width:100%">
+<tr>
+	<th>Rank</th>
+	<th>ID</th>
+	<th>Rating</th>
+</tr>
+<tr>
+	<td> 1 </td>
+	<td> black_box </td>
+	<td> 930 </td>
+</tr>
+<tr>
+	<td> 2 </td>
+	<td> lostandfoundii </td>
+	<td> 724 </td>
+</tr>
+<tr>
+	<td> 3 </td>
+	<td> jpbloom2 </td>
+	<td> 671 </td>
+</tr>
+<tr>
+	<td> 4 </td>
+	<td> hongyuw2 </td>
+	<td> 666 </td>
+</tr>
+<tr>
+	<td> 5 </td>
+	<td> acao6 </td>
+	<td> 663 </td>
+</tr>
+<tr>
+	<td> 6 </td>
+	<td> clhuang2 </td>
+	<td> 626 </td>
+</tr>
+<tr>
+	<td> 7 </td>
+	<td> shaoqin2 </td>
+	<td> 498 </td>
+</tr>
+<tr>
+	<td> 8 </td>
+	<td> cherian2106 </td>
+	<td> 423 </td>
+</tr>
+<tr>
+	<td> 9 </td>
+	<td> lethien_96 </td>
+	<td> 328 </td>
+</tr>
+<tr>
+	<td> 10 </td>
+	<td> zihanw2 </td>
+	<td> 307 </td>
+</tr>
+<tr>
+	<td> 11 </td>
+	<td> johnlq2 </td>
+	<td> 296 </td>
+</tr>
+<tr>
+	<td> 12 </td>
+	<td> pangyuchen </td>
+	<td> 279 </td>
+</tr>
+<tr>
+	<td> 13 </td>
+	<td> zdproject </td>
+	<td> 271 </td>
+</tr>
+<tr>
+	<td> 14 </td>
+	<td> vijaygk2 </td>
+	<td> 263 </td>
+</tr>
+<tr>
+	<td> 15 </td>
+	<td> justinyang </td>
+	<td> 261 </td>
+</tr>
+<tr>
+	<td> 16 </td>
+	<td> jl28 </td>
+	<td> 256 </td>
+</tr>
+<tr>
+	<td> 17 </td>
+	<td> huskysun </td>
+	<td> 254 </td>
+</tr>
+<tr>
+	<td> 18 </td>
+	<td> zpahuja2 </td>
+	<td> 239 </td>
+</tr>
+<tr>
+	<td> 19 </td>
+	<td> jrzhao2 </td>
+	<td> 228 </td>
+</tr>
+<tr>
+	<td> 20 </td>
+	<td> pingche2 </td>
+	<td> 223 </td>
+</tr>
+<tr>
+	<td> 21 </td>
+	<td> vk2 </td>
+	<td> 190 </td>
+</tr>
+</table>
+</div>
+
 <br>
 <h1 class="title">Freshman Division</h1>
 <br>
@@ -316,6 +437,12 @@ Attendance bonus for those who came will be added at the end of the season.</b>
         id="freshman_week3"
     >
         Week 3
+    </button>
+    <button class="freshman_tablinks" 
+        onclick="displayScoreboard(event, 'freshman_w4')" 
+        id="freshman_week4"
+    >
+        Week 4
     </button>
 </div>
 
@@ -456,6 +583,51 @@ Attendance bonus for those who came will be added at the end of the season.</b>
 </table>
 </div>
 
+<div id='freshman_w4' class='freshman_tabcontent'>
+<table style="width:100%">
+<tr>
+	<th>Rank</th>
+	<th>ID</th>
+	<th>Rating</th>
+</tr>
+<tr>
+	<td> 1 </td>
+	<td> kuilin </td>
+	<td> 863 </td>
+</tr>
+<tr>
+	<td> 2 </td>
+	<td> bmw4 </td>
+	<td> 740 </td>
+</tr>
+<tr>
+	<td> 3 </td>
+	<td> howards2 </td>
+	<td> 635 </td>
+</tr>
+<tr>
+	<td> 4 </td>
+	<td> Scott0129 </td>
+	<td> 485 </td>
+</tr>
+<tr>
+	<td> 5 </td>
+	<td> annieq2 </td>
+	<td> 267 </td>
+</tr>
+<tr>
+	<td> 6 </td>
+	<td> df100 </td>
+	<td> 252 </td>
+</tr>
+<tr>
+	<td> 7 </td>
+	<td> kjew2 </td>
+	<td> 204 </td>
+</tr>
+</table>
+</div>
+
 <script>
 function displayScoreboard(evt, weekNum) {
     // Declare all variables
@@ -484,6 +656,6 @@ function displayScoreboard(evt, weekNum) {
     evt.currentTarget.className += " active";
 } 
 
-document.getElementById("open_week3").click();
-document.getElementById("freshman_week3").click();
+document.getElementById("open_week4").click();
+document.getElementById("freshman_week4").click();
 </script>

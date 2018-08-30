@@ -322,7 +322,7 @@ pre .lineno {
 
 .left {
   float: left;
-  width: 33%;
+  width: 49%;
   text-align: center;
   border-right: dashed 1px #666e7b;
 }
@@ -337,14 +337,14 @@ a.contact {
 
 .center {
   display: inline-block;
-  width: 33%;
+  width: 49%;
   text-align: center;
   border-right: dashed 1px #666e7b;
 }
 
 .right {
   float: right;
-  width: 33%;
+  width: 50%;
   text-align: center;
 }
 
@@ -474,7 +474,7 @@ a.contact {
   height: 300px;
   margin-bottom: 2em;
   border-bottom: solid 10px #7c75fa;
-  background-image: url('../assets/images/Banner6.jpg');
+  background-image: url('../assets/images/Banner.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }

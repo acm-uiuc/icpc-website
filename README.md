@@ -22,6 +22,11 @@ description: Summary of Meeting
 	time can be anytime (please just make it reasonable)
 	description will be the small message under post on front page
 
+## Adding Links
+If you get a 404 after adding a link to the website, try this
+<pre><code>$ git commit --allow-empty -m "Trigger rebuild"
+$ git push </code></pre>
+
 ## Other Resources
 Other resources can be found in [here](https://docs.google.com/presentation/d/1S6Cn7opfmwvdXv_hj0epf-f2VVPMVOSjQPr48xtk6Oc/edit#slide=id.g334dc67db_00).
 

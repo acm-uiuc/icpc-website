@@ -27,8 +27,8 @@ title: UIUC's ICPC Team Homepage
 </div>
 {% endif %}
 
-{% assign week = today - 7 %}
-{% if site.categories["announcements"] | size > 0 %}
+{% assign week = today | minus: 7 %}
+{% if site.categories["announcements"] or size > 0 %}
   <div class="alert announcement">
     <div class="head">
       <p>Hey! Here are the past week's announcements, latest first:
@@ -59,7 +59,7 @@ title: UIUC's ICPC Team Homepage
   </div>
 {% endif %}
 
-{% if site.categories["practices"] | size > 0 %}
+{% if site.categories["practices"] or size > 0 %}
   {% for practice in site.categories["practices"] limit:1 %}
   <a href="{{ site.baseurl }}{{ practice.url }}">
   <div class="alert practice">
